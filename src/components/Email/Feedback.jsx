@@ -12,8 +12,7 @@ import "./styles/styles.css";
 import emailjs from '@emailjs/browser';
 
 const FeedbackForm = () => {
-  const [formSubmitted, setFormSubmitted] = useState(false);
-  const [formSubmitSuccessful, setFormSubmitSuccessful] = useState(false);
+  const [FormSubmitSuccessful, setFormSubmitSuccessful] = useState(false);
   const [loading, setLoading] = useState(false);
   const [FormDetails, setFormDetails] = useState('');
   const { Name, Email, Phone, Date, Venue } = FormDetails;
@@ -30,7 +29,6 @@ const FeedbackForm = () => {
     e.preventDefault();
     if (isValid) {
       sendFeedback();
-      setFormSubmitted(true);
     } else {
       addToast("Please add required information", { appearance: "warning", autoDismiss: true });
     }
@@ -47,7 +45,7 @@ const FeedbackForm = () => {
         if (res.status === 200) {
           setFormSubmitSuccessful(true);
           setLoading(false);
-          addToast("Email sent", { appearance: "info", autoDismiss: true });
+          addToast("Message sent", { appearance: "info", autoDismiss: true });
         }
       })
       .catch((err) => {
@@ -69,11 +67,11 @@ const FeedbackForm = () => {
     return true;
   }
 
-  if (formSubmitted && formSubmitSuccessful) {
+  if (FormSubmitSuccessful) {
     return (
       <>
         <h2>
-          Thank You! Your email <AiOutlineMail /> was sent and we'll be in touch shortly.
+          Your message <AiOutlineMail /> was sent and we'll be in touch shortly.
         </h2>
         <Confetti
           width={width}
@@ -87,11 +85,21 @@ const FeedbackForm = () => {
 
   if (loading) return <Spinner />;
 
+  function resovleMonth(month) {
+    return (month - 1)
+  }
+
+  const excludeDates = [
+    new window.Date(2022, resovleMonth(5), 1),
+    new window.Date(2022, resovleMonth(5), 2),
+    new window.Date(2022, resovleMonth(5), 3),  
+  ];
+
   return (
     <Form onSubmit={sendEmail} autoComplete="off" ref={form}>
-      <h1>Your Package</h1>
+      <h1>Your Details</h1>
       <Form.Group>
-        <Form.Label>Wedding Date</Form.Label>
+        <Form.Label>Avaliable Dates</Form.Label>
         <Form.Label className="dateInput">
           <DatePicker
             name="Date"
@@ -100,6 +108,8 @@ const FeedbackForm = () => {
             required
             showTimeSelect
             showYearDropdown
+            minDate={new window.Date()}
+            excludeDates={excludeDates}
             onChange={(Date) => setFormDetails({ ...FormDetails, Date })}
           />
         </Form.Label>
@@ -151,7 +161,7 @@ const FeedbackForm = () => {
         </Form.Group>
       </Form.Row>
       <Button variant="success" type="submit">
-        Send Email
+        Send Message
       </Button>
     </Form>
   );

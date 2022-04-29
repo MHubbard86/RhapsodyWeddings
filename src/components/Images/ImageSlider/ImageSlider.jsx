@@ -10,17 +10,19 @@ export default function () {
           fade={true}
           style={{ height: "300px", width: "500px" }}
         >
-          <Carousel.Item>
-            <img className="d-block w-200" src={"/images/shoe1.jpg"} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-200" src={"/images/shoe2.jpg"} />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="d-block w-200" src={"/images/shoe3.jpg"} />
-          </Carousel.Item>
+          <CarouselItem image='/images/shoe1.jpg' alt='' />
+          <CarouselItem image='/images/shoe2.jpg' alt='' />
+          <CarouselItem image='/images/shoe3.jpg' alt='' />
         </Carousel>
       </div>
     </div>
+  );
+}
+
+const CarouselItem = (image, alt) => {
+  return (
+    <Carousel.Item>
+      <img className="d-block w-200" src={image} alt={alt} />
+    </Carousel.Item>
   );
 }

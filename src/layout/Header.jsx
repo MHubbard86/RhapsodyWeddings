@@ -6,7 +6,7 @@ export default function Header(props) {
   const { location } = props;
   const fontSize ='2rem';
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" sticky="top">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
       <Navbar.Brand href="/">
         <img
           src="../images/headerbarlogo.png"
@@ -16,8 +16,8 @@ export default function Header(props) {
           alt="Rhapsody Wedding Hair and Events Hire"
         />
       </Navbar.Brand>
-      <a href='https://www.facebook.com/'><AiOutlineFacebook style={{fontSize, paddingRight:'5px'}} /></a>
-      <a href='https://www.instagram.com/'><AiOutlineInstagram style={{fontSize, paddingRight:'3px'}} /></a>   
+      <a href='https://www.facebook.com/'><AiOutlineFacebook style={{ fontSize, paddingRight:'5px', color: '#fff' }} /></a>
+      <a href='https://www.instagram.com/'><AiOutlineInstagram style={{ fontSize, paddingRight:'3px', color: '#fff' }} /></a>   
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" activeKey={location?.pathname}>

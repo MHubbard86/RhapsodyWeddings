@@ -5,9 +5,8 @@ export default function Footer() {
   return (
     <div className="fixed-bottom">  
     <Navbar variant="dark" bg="dark">
-        <Container>
-          <Navbar.Brand href="#">Demo site created by Matthew Hubbard for demonstrative purposes only and does not offer
-              any real products or services.</Navbar.Brand>
+        <Container style={{ justifyContent: 'center' }}>
+          <Navbar.Brand>Welcome to Rhapsody Hair and Events</Navbar.Brand>
           </Container>
       </Navbar>
     </div>
