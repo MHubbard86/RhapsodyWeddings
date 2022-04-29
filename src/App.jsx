@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Routes from "./layout/_routes";
-import Footer from "./layout/Footer";
-import Header from "./layout/Header";
+import Routes from "./navigation/Routes";
+import Layout from "./layout/Layout";
 import { BrowserRouter } from 'react-router-dom';
 import { ToastProvider } from "react-toast-notifications";
 import { ThemeProvider } from "styled-components";
@@ -13,20 +12,16 @@ import { GlobalStyles } from "./GlobalCSS";
 class App extends Component {
   render() {
     return (
-      <>
-        <div className="content">
-            <Header {...this.props} />
-            <ToastProvider>
-              <ThemeProvider theme={lightTheme}>
-                <GlobalStyles />
-                <BrowserRouter>
-                  <Routes />
-                </BrowserRouter>
-              </ThemeProvider>
-            </ToastProvider>
-        </div>
-        <Footer />
-      </>
+      <ToastProvider>
+        <ThemeProvider theme={lightTheme}>
+          <GlobalStyles />
+          <BrowserRouter>
+            <Layout>
+              <Routes />
+            </Layout>
+          </BrowserRouter>
+        </ThemeProvider>
+      </ToastProvider>
     );
   }
 }
