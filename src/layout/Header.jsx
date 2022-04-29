@@ -2,13 +2,14 @@ import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
 import { Link } from 'react-router-dom';
+import './header.css';
 
 export default function Header(props) {
   const { location } = props;
   const fontSize ='2rem';
   return (
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
-      <Navbar.Brand href="#">
+      <Navbar.Brand href="/">
         <img
           src="../images/headerbarlogo.png"
           width="50"
@@ -34,7 +35,7 @@ export default function Header(props) {
           <Nav.Link as={Link} to="/faq">
             FAQ
           </Nav.Link>
-          <Nav.Link  as={Link} to="/email">
+          <Nav.Link as={Link} to="/email">
             Contact Us
           </Nav.Link>
         </Nav>
