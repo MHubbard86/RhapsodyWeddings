@@ -7,7 +7,11 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   margin: 0;
-  padding: 0;
+  padding: 10px;
+}
+
+form {
+  padding: 10px;
 }
 
 #root {
@@ -51,42 +55,6 @@ header li {
   max-height: 400;
 }
 
-#price {
-  margin-top: 20px;
-  margin-bottom: 10px;
-  font-weight: normal;
-  font-size: 1.5em;
-}
-
-#products {
-  display: flex;
-  justify-content: center;
-}
-
-.product {
-  display: flex;
-  align-items: flex-end;
-  max-width: 350px;
-  text-align: center;
-}
-
-#cart img,
-#detail img {
-  height: 150px;
-  max-width: 50%;
-}
-
-#cart ul {
-  padding: 0;
-  list-style-type: none;
-}
-
-#cart td,
-#cart th {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 input[type="number"] {
   width: 50px;
 }
@@ -95,13 +63,7 @@ main {
   padding: 20px;
 }
 
-.cart-item {
-  display: flex;
-  margin-bottom: 20px;
-}
-
 a {
-  color: dark-blue;
   text-decoration: none;
 }
 
@@ -174,10 +136,6 @@ p[role="alert"] {
 div[role="alert"] {
   color: red;
 }
-
-/* input[type="submit"] {
-  margin-top: 20px;
-} */
 
 form > div {
   margin-bottom: 20px;
