@@ -1,22 +1,20 @@
 import React, { useState, useRef } from "react";
-import Spinner from "../../Spinner";
+import Spinner from "../../components/Loading/Spinner";
 import { Button, Form, Col } from "react-bootstrap";
-import { AiOutlineMail } from "react-icons/ai";
-import { useWindowSize } from "react-use";
-import Confetti from "react-confetti";
 import DatePicker from "react-datepicker";
 import { useToasts } from "react-toast-notifications";
 import "react-datepicker/dist/react-datepicker.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/styles.css";
 import emailjs from '@emailjs/browser';
+import excludeDates from './ExcludeDates';
+import Confetti from './Confetti';
 
-const FeedbackForm = () => {
+const ContactUs = () => {
   const [FormSubmitSuccessful, setFormSubmitSuccessful] = useState(false);
   const [loading, setLoading] = useState(false);
   const [FormDetails, setFormDetails] = useState('');
   const { Name, Email, Phone, Date, Venue } = FormDetails;
-  const { width, height } = useWindowSize();
   const { addToast } = useToasts();
   const isValid = isFormValid();
   const form = useRef();
@@ -58,7 +56,8 @@ const FeedbackForm = () => {
   function isFormValid() {
     if (
       !FormDetails.Name ||
-      (!FormDetails.Email || !FormDetails.Phone) ||
+      !FormDetails.Email || 
+      !FormDetails.Phone || 
       !FormDetails.Date ||
       !FormDetails.Venue
     ) {
@@ -67,33 +66,8 @@ const FeedbackForm = () => {
     return true;
   }
 
-  if (FormSubmitSuccessful) {
-    return (
-      <>
-        <h2>
-          Your message <AiOutlineMail /> was sent and we'll be in touch shortly.
-        </h2>
-        <Confetti
-          width={width}
-          height={height}
-          recycle={false}
-          numberOfPieces={250}
-        />
-      </>
-    );
-  }
-
+  if (FormSubmitSuccessful) return <Confetti />;
   if (loading) return <Spinner />;
-
-  function resovleMonth(month) {
-    return (month - 1)
-  }
-
-  const excludeDates = [
-    new window.Date(2022, resovleMonth(5), 1),
-    new window.Date(2022, resovleMonth(5), 2),
-    new window.Date(2022, resovleMonth(5), 3),  
-  ];
 
   return (
     <Form onSubmit={sendEmail} autoComplete="off" ref={form}>
@@ -167,4 +141,4 @@ const FeedbackForm = () => {
   );
 };
 
-export default FeedbackForm;
+export default ContactUs;

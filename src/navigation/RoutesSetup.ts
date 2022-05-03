@@ -1,4 +1,4 @@
-import Email from "../features/Email/Feedback";
+import Email from "../features/ContactUs/ContactUs";
 import Reviews from "../features/Reviews/Reviews";
 import FAQ from "../features/FAQ/FAQ";
 import Packages from "../features/Packages/Packages";
