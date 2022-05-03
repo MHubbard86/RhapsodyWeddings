@@ -7,7 +7,6 @@ export default function () {
       <Carousel
         interval={2000}
         fade={true}
-        style={{ height: "300px", width: "500px" }}
       >
       <Carousel.Item>
         <img className="d-block w-200" src='/images/shoe1.jpg' alt='' />
