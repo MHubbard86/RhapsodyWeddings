@@ -6,8 +6,8 @@ import Layout from "./layout/Layout";
 import { BrowserRouter } from 'react-router-dom';
 import { ToastProvider } from "react-toast-notifications";
 import { ThemeProvider } from "styled-components";
-import { lightTheme } from "./themes";
-import { GlobalStyles } from "./GlobalCSS";
+import { lightTheme } from "./styles/themes";
+import { GlobalStyles } from "./styles/GlobalCSS";
 
 class App extends Component {
   render() {
