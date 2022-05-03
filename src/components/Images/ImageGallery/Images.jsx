@@ -1,27 +1,19 @@
+
 const Images = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: "/images/shoe1.jpg",
+    thumbnail: "/images/shoe1.jpg",
+    description : 'Description goes here...',
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: "/images/shoe2.jpg",
+    thumbnail: "/images/shoe2.jpg",
+    description : 'Description goes here...',
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
-  },
-  {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: "/images/shoe3.jpg",
+    thumbnail: "/images/shoe3.jpg",
+    description : 'Description goes here...',
   },
 ];
 
