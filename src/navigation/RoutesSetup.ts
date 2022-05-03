@@ -1,7 +1,7 @@
-import Email from "../components/Email/Feedback";
-import Reviews from "../components/Reviews/Reviews";
-import FAQ from "../components/FAQ/FAQ";
-import Packages from "../components/Packages/Packages";
+import Email from "../features/Email/Feedback";
+import Reviews from "../features/Reviews/Reviews";
+import FAQ from "../features/FAQ/FAQ";
+import Packages from "../features/Packages/Packages";
 import * as Route from './RoutesIndex';
 
 const AppRoutes = () => {
