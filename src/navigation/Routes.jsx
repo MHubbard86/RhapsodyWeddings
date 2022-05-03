@@ -1,19 +1,20 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Home from "../layout/Home";
-import Email from "../components/Email/Feedback";
-import Reviews from "../components/Reviews/Reviews";
-import FAQ from "../components/FAQ/FAQ";
-import Packages from "../components/Packages/Packages";
+import AppRoutes from './RoutesSetup';
+import ComponentRoute from './ComponentRoute';
 
 function Routes() {
+  const appRoutes = AppRoutes();
   return (
     <Route>
       <Switch>
-        <Route path="/packages" component={Packages} />
-        <Route path="/reviews" component={Reviews} />
-        <Route path="/faq" component={FAQ} />
-        <Route path="/email" component={Email} />
+        {Object.keys(appRoutes).map((key) => {
+          const appRoutesGroup = appRoutes[key];
+          return appRoutesGroup.map((appRoute, index) => (
+            <ComponentRoute {...appRoute} key={index} />
+          ));
+        })}
         <Route path="/" exact component={Home} />
         <Route path="*" component={Home} />
       </Switch>
@@ -22,3 +23,4 @@ function Routes() {
 }
 
 export default Routes;
+
