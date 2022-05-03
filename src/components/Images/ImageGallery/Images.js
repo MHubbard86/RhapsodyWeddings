@@ -1,4 +1,3 @@
-
 const Images = [
   {
     original: "/images/shoe1.jpg",
