@@ -8,10 +8,10 @@ export default function Packages() {
   return (
     <>
       <h1>Packages</h1>
-      <div style={{ width: '70%', marginTop: '20px' }}>
+      <div style={{ width: '100%', marginTop: '20px' }}>
         <ImageGallery Images={Images} />
       </div>  
-      <div style={{ width: '70%', marginTop: '20px', marginBottom: '20px' }}>
+      <div style={{ width: '100%', marginTop: '20px', marginBottom: '20px' }}>
         <ImageSlider />
       </div>  
       <div style={{ width: '100%', marginTop: '20px', marginBottom: '20px' }}>

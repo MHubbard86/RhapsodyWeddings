@@ -71,7 +71,7 @@ const ContactUs = () => {
 
   return (
     <Form onSubmit={sendEmail} autoComplete="off" ref={form}>
-      <h1>Your Details</h1>
+      <h1>Contact Us</h1>
       <Form.Group>
         <Form.Label>Avaliable Dates</Form.Label>
         <Form.Label className="dateInput">
@@ -92,7 +92,7 @@ const ContactUs = () => {
         <Form.Label>Wedding Venue</Form.Label>
         <Form.Control
           name="Venue"
-          value={Venue}
+          value={Venue || ''}
           required
           onChange={handleEventChange}
           type="input"
@@ -103,37 +103,35 @@ const ContactUs = () => {
         <Form.Label>Name</Form.Label>
         <Form.Control
           name="Name"
-          value={Name}
+          value={Name || ''}
           required
           onChange={handleEventChange}
           type="input"
           placeholder="Enter Name"
         />
       </Form.Group>
-      <Form.Row>
-        <Form.Group as={Col}>
-          <Form.Label>Email</Form.Label>
-          <Form.Control
-            name="Email"
-            value={Email}
-            required
-            onChange={handleEventChange}
-            type="email"
-            placeholder="Enter Email"
-          />
-        </Form.Group>
-        <Form.Group as={Col}>
-          <Form.Label>Phone</Form.Label>
-          <Form.Control
-            name="Phone"
-            value={Phone}
-            required
-            type="Input"
-            onChange={handleEventChange}
-            placeholder="Enter Phone"
-          />
-        </Form.Group>
-      </Form.Row>
+      <Form.Group>
+        <Form.Label>Email</Form.Label>
+        <Form.Control
+          name="Email"
+          value={Email || ''}
+          required
+          onChange={handleEventChange}
+          type="email"
+          placeholder="Enter Email"
+        />
+      </Form.Group>
+      <Form.Group>
+        <Form.Label>Phone</Form.Label>
+        <Form.Control
+          name="Phone"
+          value={Phone || ''}
+          required
+          type="input"
+          onChange={handleEventChange}
+          placeholder="Enter Phone"
+        />
+      </Form.Group>
       <Button variant="success" type="submit">
         Send Message
       </Button>
