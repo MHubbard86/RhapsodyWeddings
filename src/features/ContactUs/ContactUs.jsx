@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
 import Spinner from "../../components/Loading/Spinner";
-import { Button, Form, Col } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import DatePicker from "react-datepicker";
 import { useToasts } from "react-toast-notifications";
 import "react-datepicker/dist/react-datepicker.css";
