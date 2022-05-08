@@ -1,5 +1,5 @@
 function resovleMonth(month) {
-    return (month - 1)
+  return (month - 1)
 }
 
 const excludeDates = [

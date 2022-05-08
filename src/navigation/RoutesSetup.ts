@@ -2,6 +2,7 @@ import Email from "../features/ContactUs/ContactUs";
 import Reviews from "../features/Reviews/Reviews";
 import FAQ from "../features/FAQ/FAQ";
 import Packages from "../features/Packages/Packages";
+import PoweredBy from '../components/PoweredBy/PoweredBy';
 import * as Route from './RoutesIndex';
 
 const AppRoutes = () => {
@@ -26,6 +27,11 @@ const AppRoutes = () => {
         exact: true,
         component: Email,
         path: Route.Email,
+      },
+      {
+        exact: true,
+        component: PoweredBy,
+        path: Route.PoweredBy,
       },
     ],
   };
