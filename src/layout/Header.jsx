@@ -23,19 +23,19 @@ export default function Header(props) {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" activeKey={location?.pathname}>
-          <Nav.Link as={Link} to="/home" bg="white">
+          <Nav.Link as={Link} to="/home" bg="white" eventKey="1">
             Welcome
           </Nav.Link>
-          <Nav.Link as={Link} to="/packages">
+          <Nav.Link as={Link} to="/packages" eventKey="2">
             Packages
           </Nav.Link>
-          <Nav.Link as={Link} to="/reviews">
+          <Nav.Link as={Link} to="/reviews" eventKey="3">
             Reviews
           </Nav.Link>
-          <Nav.Link as={Link} to="/faq">
+          <Nav.Link as={Link} to="/faq" eventKey="4">
             FAQ
           </Nav.Link>
-          <Nav.Link as={Link} to="/email">
+          <Nav.Link as={Link} to="/email" eventKey="5">
             Contact Us
           </Nav.Link>
         </Nav>

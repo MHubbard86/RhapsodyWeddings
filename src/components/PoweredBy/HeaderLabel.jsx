@@ -6,10 +6,12 @@ export default function HeaderLabel({ resume }) {
     <>
       <div style={{ marginTop: 40 }}>
         <h1>{resume.basics.name}</h1>
-        <h5 style={{ marginTop: -20 }}>
-          {resume.basics.label}
-          <IoBuild />
-        </h5>
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent:'center', marginTop: "10px" }}>
+          <h5>
+            {resume.basics.label}
+            <IoBuild />
+          </h5>
+        </div>
       </div>
     </>
   );

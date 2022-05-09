@@ -5,7 +5,7 @@ import "./styles/module.css";
 
 export default function Skills({ resume }) {
   return (
-    <div style={{ marginTop: 70, marginBottom: "1em" }}>
+    <div style={{ marginTop: '55px', marginBottom: "1em" }}>
       <h3 style={{ marginBottom: "0.5em", fontWeight: 700 }}>Skills</h3>
       {resume.skills.map((item, k) => (
         <div key={k} style={{ position: "relative" }}>
