@@ -19,7 +19,7 @@ const PoweredBy = () => {
       }}
     >
       <div style={{ display: "flex" }}>
-        <div style={{ width: 350, marginRight: 80 }}>
+        <div style={{ width: '350px', marginRight: '80px', marginTop: '10px' }}>
           <HeaderPicture resume={data} />
           <Contacts resume={data} />
           {isEmpty(data.interests) ? null : <Interests resume={data} />}

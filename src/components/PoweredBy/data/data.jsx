@@ -5,7 +5,7 @@ export default {
     summary:
       "Senior software engineer with 15 years of professional experience.  Someone who enjoys managing workloads, takes personal responsibility and ownership for delivery, behaviours, and continuous self-improvement.",
     picture:
-      "https://media-exp1.licdn.com/dms/image/C4D03AQFJN0YXpT7mfA/profile-displayphoto-shrink_400_400/0/1516585031732?e=1615420800&v=beta&t=z2bSSAzia6n4ZvvVeOei_pQrqJ2P6XH7QLOFmE-avj4",
+      "/images/profile.jpg",
     email: "mjhubb@homail.co.uk",
     phone: "07716886529",
     website: "https://google.com",
