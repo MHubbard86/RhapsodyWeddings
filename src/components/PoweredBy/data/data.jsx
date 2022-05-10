@@ -20,27 +20,46 @@ export default {
   skills: [
     {
       name: "Frontend Development",
-      keywords: ["React", "TypeScript", "JavaScript", "HTML", "CSS", "JQuery"],
+      skill: [
+        { name: "React", image: "/images/logos/React.png" },
+        { name: "TypeScript", image: "/images/logos/Typescript.png" },
+        { name: "JavaScript", image: "/images/logos/javascript.png" },
+        { name: "HTML", image: "/images/logos/html.png" },
+        { name: "CSS", image: "/images/logos/CSS.png" },
+        { name: "JQuery", image: "/images/logos/jquery.png" },
+      ],
     },
     {
       name: "Backend Development",
-      keywords: [".Net Core 5", "C#", "Entity Framework", "SQL Server", "T-SQL"],
+      skill: [
+        { name: ".Net Core 5" },
+        { name: "C#" },
+        { name: "Entity Framework" },
+        { name: "SQL Server" },
+        { name: "T-SQL" },
+      ],
     },
     {
       name: "Testing Development",
-      keywords: ["xUnit", "Moq", "Jest", "Enzyme"],
+      skill: [
+        { name: "xUnit" },
+        { name: "Moq" },
+        { name: "Jest" },
+        { name: "Enzyme" },
+      ],
     },
     {
       name: "Other",
-      keywords: [
-        "JIRA",
-        "Github",
-        "Agile/SCRUM/Lean",
-        "JWT",
-        "OAuth",
-        "VSCode",
-        "VS2019",
-      ]
+      skill: [
+        { name: "JIRA" },
+        { name: "Github" },
+        { name: "Agile/SCRUM/Lean" },
+        { name: "JWT" },
+        { name: "OAuth" },
+        { name: "Okta" },
+        { name: "VSCode" },
+        { name: "VS2019/VS2022" },
+      ],
     },
   ],
   work: [

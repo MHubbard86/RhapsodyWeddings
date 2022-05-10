@@ -9,7 +9,7 @@ export default function Footer() {
     <Navbar variant="dark" bg="dark">
         <Container style={{ justifyContent: 'center' }}>
           <Navbar.Brand>Welcome to Rhapsody Hair and Events</Navbar.Brand>
-          <div style={{color: '#fff'}}><Link to="/poweredby"><ImPower /></Link></div>
+          <Link to="/poweredby"><ImPower style={{color: '#fff'}} /></Link>
           </Container>
       </Navbar>
     </div>

@@ -14,10 +14,19 @@ export default function Skills({ resume }) {
             <strong>{item.name}</strong>
           </div>
           <div>
-            {item.keywords.map((tag, k) => (
-              <Tag key={k} color="secondary">
-                {tag}
-              </Tag>
+            {item?.skill?.map((logo, k) => (
+              <>
+                <Tag key={k} color="secondary">
+                  {logo.name}
+                </Tag>
+                { logo?.image && 
+                  <img
+                    src={logo.image}
+                    style={{ height: "25px", marginLeft: '5px', marginRight: '2px' }}
+                    alt={logo.image}
+                  />
+                  }
+              </>
             ))}
           </div>
         </div>
