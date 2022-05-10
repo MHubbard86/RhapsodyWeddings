@@ -8,13 +8,13 @@ const ConfettiMessage = () => {
   return (
     <>
       <h2>
-        Congratulation!  Your message <AiOutlineMail /> was sent and we'll be in touch shortly.
+        Congratulation on your big day!  Your message <AiOutlineMail /> was sent and we'll be in touch shortly.
       </h2>
       <Confetti
         width={width}
         height={height}
         recycle={false}
-        numberOfPieces={250}
+        numberOfPieces={500}
       />
     </>
   );

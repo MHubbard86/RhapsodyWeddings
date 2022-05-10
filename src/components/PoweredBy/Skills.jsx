@@ -13,10 +13,10 @@ export default function Skills({ resume }) {
           <div>
             <strong>{item.name}</strong>
           </div>
-          <div>
+          <div style={{ display: 'flex', flexWrap: 'wrap' }}>
             {item?.skill?.map((logo, k) => (
-              <>
-                <Tag key={k} color="secondary">
+              <div key={k}>
+                <Tag color="secondary">
                   {logo.name}
                 </Tag>
                 {logo?.image && 
@@ -24,10 +24,9 @@ export default function Skills({ resume }) {
                     src={logo.image}
                     style={{ height: "25px", marginLeft: '5px', marginRight: '2px' }}
                     alt={logo.image}
-                    key={`image${k}`}
                   />
                   }
-              </>
+              </div>
             ))}
           </div>
         </div>
