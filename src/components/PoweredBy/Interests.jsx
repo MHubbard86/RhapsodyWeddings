@@ -3,7 +3,7 @@ import Tag from "./Tag";
 
 export default function Interests({ resume }) {
   return (
-    <div>
+    <>
       <h3 style={{ marginBottom: "0.5em", fontWeight: 700 }}>
         Interests and Hobbies
       </h3>
@@ -21,6 +21,6 @@ export default function Interests({ resume }) {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }

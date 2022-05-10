@@ -11,34 +11,18 @@ import data from "./data/data";
 
 const PoweredBy = () => {
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
-      <div style={{ display: "flex" }}>
-        <div style={{ width: '350px', marginRight: '80px', marginTop: '10px' }}>
-          <HeaderPicture resume={data} />
-          <Contacts resume={data} />
-          {isEmpty(data.interests) ? null : <Interests resume={data} />}
-        </div>
-        <div>
-          <HeaderLabel resume={data} />
-          {isEmpty(data.skills) ? null : <Skills resume={data} />}
-          {isEmpty(data.education) ? null : (
-            <Education education={data.education} />
-          )}
-          {isEmpty(data.work) ? null : <Experience items={data.work} />}
-        </div>
+    <div style={{ display: "flex", justifyContent: "center", flexWrap: 'wrap' }} >
+      <div style={{ justifyContent: 'center', width: '50%', margin: '20px' }}>
+        <Contacts resume={data} />
+        <HeaderLabel resume={data} />
+        <HeaderPicture resume={data} />
+        {data.skills && <Skills resume={data} />}
+        {data.education && <Education education={data.education} />}
+        {data.work && <Experience items={data.work} />}
+        {data.interests && <Interests resume={data} />}
       </div>
     </div>
   );
 };
-
-function isEmpty(item) {
-  return !item || item.length === 0;
-}
 
 export default PoweredBy;
