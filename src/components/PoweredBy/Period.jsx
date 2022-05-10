@@ -11,7 +11,11 @@ export default function Period({ startDate, endDate }) {
       <span>
         {endDate
           ? DateTime.fromFormat(endDate, "yyyy-MM-dd").toFormat("MMMM yyyy")
-          : "now"}
+          : new Date().toLocaleString('en-US', {
+              month: 'long', // "June"
+              day: '2-digit', // "01"
+              year: 'numeric' // "2019"
+            })}
       </span>
     </span>
   );

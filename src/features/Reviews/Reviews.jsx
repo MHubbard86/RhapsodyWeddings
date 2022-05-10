@@ -7,7 +7,7 @@ export default function Reviews() {
     <>
       <h1>Reviews</h1>
       <div style={{ width: '100%', marginTop: '20px' }}>
-        <ImageGallery Images={Images} />
+        <ImageGallery Images={Images} slideInterval={5000} />
       </div>  
     </>
   );

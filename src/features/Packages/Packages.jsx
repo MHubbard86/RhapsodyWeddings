@@ -8,7 +8,7 @@ export default function Packages() {
     <>
       <h1>Packages</h1>
       <div style={{ width: '100%', marginTop: '20px' }}>
-        <ImageGallery Images={Images} />
+        <ImageGallery Images={Images} slideInterval={3000} />
       </div>
       <div style={{ width: '100%', marginTop: '20px', marginBottom: '20px' }}>
         <VideoCarousel />

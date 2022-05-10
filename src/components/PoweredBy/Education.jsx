@@ -23,7 +23,7 @@ export default function Education({ education }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              {item.website}
+              {item.institution}
             </a>
             <Period startDate={item.startDate} endDate={item.endDate} />
           </span>
