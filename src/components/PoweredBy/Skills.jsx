@@ -5,7 +5,7 @@ import "./styles/module.css";
 
 export default function Skills({ resume }) {
   return (
-    <div style={{ marginTop: '55px', marginBottom: "1em" }}>
+    <>
       <h3 style={{ marginBottom: "0.5em", fontWeight: 700 }}>Skills</h3>
       {resume.skills.map((item, k) => (
         <div key={k} style={{ position: "relative" }}>
@@ -19,11 +19,12 @@ export default function Skills({ resume }) {
                 <Tag key={k} color="secondary">
                   {logo.name}
                 </Tag>
-                { logo?.image && 
+                {logo?.image && 
                   <img
                     src={logo.image}
                     style={{ height: "25px", marginLeft: '5px', marginRight: '2px' }}
                     alt={logo.image}
+                    key={`image${k}`}
                   />
                   }
               </>
@@ -31,6 +32,8 @@ export default function Skills({ resume }) {
           </div>
         </div>
       ))}
-    </div>
+    </>
   );
 }
+
+

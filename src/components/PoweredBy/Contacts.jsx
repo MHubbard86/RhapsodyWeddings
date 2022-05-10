@@ -4,10 +4,9 @@ import {
   AiFillLinkedin,
   AiOutlineLaptop,
   AiOutlineMail,
-  AiOutlinePhone,
 } from "react-icons/ai";
 
-const IconSize = "3em";
+const IconSize = "2em";
 
 const Icon = ({ url }) => {
   const u = url.toLowerCase();
@@ -22,50 +21,39 @@ const Icon = ({ url }) => {
 
 export default function Contacts({ resume }) {
   return (
-    <div style={{ marginBottom: "0.5em" }}>
-      <h3
-        style={{
-          marginBottom: "0.5em",
-          fontWeight: 700,
-        }}
-      >
-        Contact and Profile
-      </h3>
-      <div>
-        <AiOutlineMail size={IconSize} />
-        <a className="addLink" href={`mailto:${resume.basics.email}`}>
-          {resume.basics.email}
-        </a>
-      </div>
-      <div>
-        <AiOutlinePhone size={IconSize} />
-        {resume.basics.phone}
-      </div>
-      <div>
-        <AiOutlineLaptop size={IconSize} />
-        <a
-          className="addLink"
-          href={resume.basics.website}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          {resume.basics.website}
-        </a>
-      </div>
-      {(resume.basics.profiles || []).map((p, k) => (
-        <div key={k}>
-          <Icon url={p.url} />
-          <a
-            className="addLink"
-            href={p.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ display: "inline-flex", alignItems: "center" }}
-          >
-            {p.username}
+    <>
+      <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row' }}>
+        <div>          
+          <a className="addLink" href={`mailto:${resume.basics.email}`}>
+            <AiOutlineMail size={IconSize} />
           </a>
         </div>
-      ))}
-    </div>
+        {resume.basics.website && 
+          <div>
+            <a
+              className="addLink"
+              href={resume.basics.website}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineLaptop size={IconSize} />
+            </a>
+          </div>
+        }
+        {(resume.basics.profiles || []).map((p, k) => (
+          <div key={k}>
+            <a
+              className="addLink"
+              href={p.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ display: "inline-flex", alignItems: "center" }}
+            >
+              <Icon url={p.url} />
+            </a>
+          </div>
+        ))}
+      </div>
+    </>
   );
 }

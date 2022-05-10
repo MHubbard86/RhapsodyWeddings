@@ -1,14 +1,13 @@
 export default {
   basics: {
     name: "Matthew Hubbard",
-    label: "Developer",
+    label: "Web Developer",
     summary:
       "Senior software engineer with 15 years of professional experience.  Someone who enjoys managing workloads, takes personal responsibility and ownership for delivery, behaviours, and continuous self-improvement.",
     picture:
       "/images/profile.jpg",
     email: "mjhubb@homail.co.uk",
     phone: "07716886529",
-    website: "https://google.com",
     profiles: [
       { username: "MHubbard86", url: "https://github.com/MHubbard86" },
       {
