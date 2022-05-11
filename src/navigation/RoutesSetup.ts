@@ -1,8 +1,10 @@
 import Email from "../features/ContactUs/ContactUs";
 import Reviews from "../features/Reviews/Reviews";
 import FAQ from "../features/FAQ/FAQ";
-import Packages from "../features/Packages/Packages";
+import Gallery from "../features/Gallery/Gallery";
 import PoweredBy from '../components/PoweredBy/PoweredBy';
+import Photoshoot from "../features/Photoshoot/Photoshoot";
+import Prices from "../features/Prices/Prices";
 import * as Route from './RoutesIndex';
 
 const AppRoutes = () => {
@@ -10,13 +12,23 @@ const AppRoutes = () => {
     shared: [
       {
         exact: true,
-        component: Packages,
-        path: Route.Packages,
+        component: Gallery,
+        path: Route.Gallery,
       },
       {
         exact: true,
         component: Reviews,
         path: Route.Reviews,
+      },
+      {
+        exact: true,
+        component: Photoshoot,
+        path: Route.Photoshoot,
+      },
+      {
+        exact: true,
+        component: Prices,
+        path: Route.Prices,
       },
       {
         exact: true,

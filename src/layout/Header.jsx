@@ -24,19 +24,25 @@ export default function Header(props) {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" activeKey={location?.pathname}>
           <Nav.Link as={Link} to="/home" bg="white" eventKey="1">
-            Welcome
+            About Us
           </Nav.Link>
-          <Nav.Link as={Link} to="/packages" eventKey="2">
-            Packages
+          <Nav.Link as={Link} to="/prices" eventKey="2">
+            Prices
           </Nav.Link>
-          <Nav.Link as={Link} to="/reviews" eventKey="3">
+          <Nav.Link as={Link} to="/gallery" eventKey="3">
+            Gallery
+          </Nav.Link>
+          <Nav.Link as={Link} to="/reviews" eventKey="4">
             Reviews
           </Nav.Link>
-          <Nav.Link as={Link} to="/faq" eventKey="4">
+          <Nav.Link as={Link} to="/photoshoot" eventKey="5">
+            Photoshoots
+          </Nav.Link>
+          <Nav.Link as={Link} to="/faq" eventKey="6">
             FAQ
           </Nav.Link>
-          <Nav.Link as={Link} to="/email" eventKey="5">
-            Contact Us
+          <Nav.Link as={Link} to="/email" eventKey="7">
+            Enquiry Form
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
