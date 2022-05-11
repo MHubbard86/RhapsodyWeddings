@@ -66,8 +66,8 @@ const ContactUs = () => {
 
   return (
     <Form onSubmit={sendEmail} autoComplete="off" ref={form}>
-      <h1>Contact Us</h1>
-      <ContactUsForm 
+      <h1>Enquiry Form</h1>
+      <ContactUsForm
         FormDetails={FormDetails}
         setFormDetails={setFormDetails}
         handleEventChange={handleEventChange}
