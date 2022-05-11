@@ -11,10 +11,9 @@ export default function Header(props) {
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
       <Navbar.Brand href="/">
         <img
-          src="../images/headerbarlogo.png"
-          width="50"
-          height="50"
-          className="d-inline-block align-top"
+          src="../images/logo.jpg"
+          width="75"
+          className="d-inline-block"
           alt="Rhapsody Wedding Hair and Events Hire"
         />
       </Navbar.Brand>
