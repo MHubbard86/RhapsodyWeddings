@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
-import { AiOutlineFacebook, AiOutlineInstagram } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineInstagram } from "react-icons/ai";
 import { Link } from 'react-router-dom';
 import './header.css';
 
@@ -17,8 +17,8 @@ export default function Header(props) {
           alt="Rhapsody Wedding Hair and Events Hire"
         />
       </Navbar.Brand>
-      <a href='https://www.facebook.com/'><AiOutlineFacebook style={{ fontSize, paddingRight:'5px', color: '#fff' }} /></a>
-      <a href='https://www.instagram.com/'><AiOutlineInstagram style={{ fontSize, paddingRight:'3px', color: '#fff' }} /></a>   
+      <a href='mailto:rhapsodyhairandevents@gmail.com'><AiOutlineMail style={{ fontSize, paddingRight:'5px', color: '#fff' }} /></a>
+      <a href='https://www.instagram.com/rhapsody_hairand_events/'><AiOutlineInstagram style={{ fontSize, paddingRight:'3px', color: '#fff' }} /></a>   
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" activeKey={location?.pathname}>
