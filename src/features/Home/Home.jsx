@@ -9,7 +9,6 @@ export default function Home () {
         <div className='centerContent'>
           <img
             src="../images/logo_main.jpg"
-            width="200"
             className="d-inline-block"
             alt="Rhapsody Wedding Hair and Events Hire"
           />
@@ -22,10 +21,7 @@ export default function Home () {
               So whether you have a specific theme or want bits and pieces.<br /> 
               I have at least something that will fit your wedding perfectly.<br />
               Take advantage of my bespoke package.<br />
-              Our package includes <strong>10 items for £600</strong> where you can hand pick the things you like the most or simply choose individual items.<br />
-              The choice is completely yours.<br />
-              Here's a little snippet of some of the items we have.<br />
-              If there is anything there that you don't see please pop a message.
+              Our package includes <strong>10 items for £600</strong> where you can hand pick the things you like the most or <strong>simply choose individual items</strong>.<br />
             </div>
           </div>
       </div>
