@@ -1,6 +1,6 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Home from "../layout/Home";
+import Home from "../features/Home/Home";
 import AppRoutes from './RoutesSetup';
 import ComponentRoute from './ComponentRoute';
 

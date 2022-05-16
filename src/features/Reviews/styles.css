@@ -1,0 +1,15 @@
+.reviews-wrap {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  padding: 20px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .reviews-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+}

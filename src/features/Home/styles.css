@@ -1,0 +1,23 @@
+.homepage-description-wrap {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 20px;
+  width: 100%;
+}
+
+.homepage-wording-wrap { 
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .homepage-description-wrap {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+  }
+  .homepage-wording-wrap { 
+    margin: 0px;
+  }
+}

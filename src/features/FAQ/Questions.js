@@ -4,7 +4,7 @@ const FAQ = [
     answer: "Answer...",
   },
   {
-    question: "How do Hair Trails work?",
+    question: "How do Hair trails work?",
     answer: "Answer...",
   },
   {
