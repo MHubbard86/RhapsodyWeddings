@@ -5,3 +5,4 @@ export const Email = '/email';
 export const PoweredBy = '/poweredby';
 export const Photoshoot = '/photoshoot';
 export const Prices = '/prices';
+export const Cakehoops = '/cakehoops';
