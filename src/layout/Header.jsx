@@ -14,7 +14,7 @@ export default function Header(props) {
           src="../images/logo.jpg"
           width="75"
           className="d-inline-block"
-          alt="Rhapsody Wedding Hair and Events Hire"
+          alt="Rhapsody Wedding Hair and Events"
         />
       </Navbar.Brand>
       <a href='mailto:rhapsodyhairandevents@gmail.com'><AiOutlineMail style={{ fontSize, paddingRight:'5px', color: '#fff' }} /></a>
@@ -23,10 +23,10 @@ export default function Header(props) {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto" activeKey={location?.pathname}>
           <Nav.Link as={Link} to="/home" bg="white" eventKey="1">
-            About Us
+            Home
           </Nav.Link>
           <Nav.Link as={Link} to="/prices" eventKey="2">
-            Prices
+            Pricing
           </Nav.Link>
           <Nav.Link as={Link} to="/gallery" eventKey="3">
             Gallery
@@ -38,7 +38,7 @@ export default function Header(props) {
             Photoshoots
           </Nav.Link>
           <Nav.Link as={Link} to="/faq" eventKey="6">
-            FAQ
+            FAQs
           </Nav.Link>
           <Nav.Link as={Link} to="/email" eventKey="7">
             Enquiry Form

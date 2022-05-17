@@ -1,19 +1,25 @@
+const hairDirectory = '../images/hair/';
 const Images = [
   {
-    original: "../images/gallery/1.jpg",
-    thumbnail: "../images/gallery/1.jpg",
-    description : 'Description goes here...',
+    original: hairDirectory + "1.jpg",
+    thumbnail: hairDirectory + "1.jpg",
   },
   {
-    original: "../images/gallery/2.jpg",
-    thumbnail: "../images/gallery/2.jpg",
-    description : 'Description goes here...',
+    original: hairDirectory + "2.jpg",
+    thumbnail: hairDirectory + "2.jpg",
   },
   {
-    original: "../images/gallery/3.jpg",
-    thumbnail: "../images/gallery/3.jpg",
-    description : 'Description goes here...',
+    original: hairDirectory + "3.jpg",
+    thumbnail: hairDirectory + "3.jpg",
   },
+  {
+    original: hairDirectory + "4.jpg",
+    thumbnail: hairDirectory + "4.jpg",
+  },
+  {
+    original: hairDirectory + "5.jpg",
+    thumbnail: hairDirectory + "5.jpg",
+  }
 ];
 
 export default Images;
