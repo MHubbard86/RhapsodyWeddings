@@ -6,13 +6,18 @@ import './styles.css';
 
 export default function Reviews() {
 
-  const Header = (name, location) => {
+  const Header = (name, location, link) => {
     return(
       <div>
         <div style={{ fontWeight: 'bold', fontSize: '18px'}}>
           {name}
         </div>
         <div style={{ fontStyle: 'Italic', fontSize: '14px'}}>{location}</div>
+        {link &&
+          <div style={{ fontStyle: 'Italic'}}>
+            <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>
+          </div>
+        }
       </div>
     )
   }
@@ -32,7 +37,7 @@ export default function Reviews() {
       <div style={{ width: '100%' }}>
         <div className="reviews-wrap">
           { 
-            Header("Charlee Benge", "Gosfield Hall Dec '21")
+            Header("Charlee Benge", "Gosfield Hall Dec '21", "https://www.gosfield-hall.co.uk/")
           }
           <div>
             "I can not thank you enough for how beautiful you made my venue look, as well as my bridesmaids.  

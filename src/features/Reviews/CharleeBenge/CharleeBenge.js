@@ -1,7 +1,7 @@
 const CharleeBenge = [
   {
     src: "../images/reviews/CharleeBenge/1.jpg",
-    width: 4,
+    width: 2,
     height: 2
   },
   {
