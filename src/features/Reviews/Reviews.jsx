@@ -26,7 +26,7 @@ export default function Reviews() {
     if (!Images) return;
     return (
       <div style={{ width: '100%', paddingLeft: '20px', paddingRight: '20px' }}>
-        <PhotoGallery Images={Images} />
+        <PhotoGallery photos={Images} />
       </div>
     )
   }

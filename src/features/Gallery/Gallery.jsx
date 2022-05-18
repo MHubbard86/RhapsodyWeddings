@@ -12,7 +12,7 @@ export default function Gallery() {
         <ImageGallery Images={Favourites} />
       </div>
       <div style={{ width: '100%', marginTop: '20px' }}>
-        <PhotoGallery Images={Images} />
+        <PhotoGallery photos={Images} />
       </div>
     </>
   );

@@ -5,16 +5,16 @@
   width: 100%;
 }
 
-.pricing-wrap h3 {
-  justify-content: left;
-  display: flex;
-}
-
-.pricing-hair-wrap {
+.decor-wrap {
   display: grid;
   grid-template-columns: 100%;
-  padding-top: 10px;
+  padding: 20px;
   width: 100%;
+}
+
+.pricing-wrap h3, .decor-wrap h3 {
+  justify-content: left;
+  display: flex;
 }
 
 .pricing-decor-wrap {

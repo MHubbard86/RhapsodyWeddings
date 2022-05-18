@@ -1,4 +1,4 @@
-const PriceList = [
+const DecorImages = [
   {
     id: "1",
     name: "Touareg",
@@ -57,4 +57,4 @@ const PriceList = [
   },
 ];
 
-export default PriceList;
+export default DecorImages;

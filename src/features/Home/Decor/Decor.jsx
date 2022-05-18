@@ -7,7 +7,7 @@ export default function Decor() {
     <>
       <h3>Décor</h3>
       <div style={{ width: '100%' }}>
-        <PhotoGallery Images={Images} />
+        <PhotoGallery photos={Images} />
       </div>
     </>
   );

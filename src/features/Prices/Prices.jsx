@@ -1,6 +1,7 @@
 import React from "react";
-import ProductTile from '../../components/ProductTile/ProductTile';
-import PriceList from './PriceList';
+import PriceList from './PriceList/PriceList';
+import PhotoGallery from '../../components/PhotoGallery/PhotoGallery';
+import HairImages from './HairImages';
 import './styles.css';
 
 export default function Prices() {
@@ -9,23 +10,26 @@ export default function Prices() {
       <h1>Pricing</h1>
       <div className="pricing-wrap">
         <div>
-          <h3>Hair</h3>
-          <div className='leftContent'><i>Includes trail prior to the day, travel and free use of accessories</i></div>
-          <div className="pricing-hair-wrap">
-            <div>
-              <strong>Full Bridal Hair Package - £350</strong><br />
-              <i>With up to 3 bridemaids with complimentary Mother of the Bride</i><br /><br />
-              <u><strong>Individual Prices</strong></u><br />
-              Bride - £150<br />
-              Bridemaids - £50<br />
-              Trail Only - £65<br />
-              Mother of the Bridge or Groom - £45<br />
-              Under 10s - £35 each<br />
-              Extra Guests - £50 per person<br />
-              Use of hair extensions/hair pieces individual wefts - £60
-            </div>
+          <h3>Full Bridal Hair Package - £350</h3>
+          <div className='leftContent'></div>
+          <div>
+            With up to 3 bridemaids with complimentary Mother of the Bride.<br />
+            Includes trail prior to the day, travel and free use of accessories.<br /><br />
+            <h5>Individual Prices</h5>
+            Bride - £150<br />
+            Bridemaids - £50<br />
+            Trail Only - £65<br />
+            Mother of the Bridge or Groom - £45<br />
+            Under 10s - £35 each<br />
+            Extra Guests - £50 per person<br />
+            Use of hair extensions/hair pieces individual wefts - £60
           </div>
         </div>
+        <div>
+          <PhotoGallery photos={HairImages} />
+        </div>
+      </div>
+      <div className="decor-wrap">
         <div>
           <h3>Décor</h3>
           <div className='leftContent'><i>Customised to your wedding colours</i></div>
@@ -76,18 +80,7 @@ export default function Prices() {
           </div>
         </div>
       </div>
-      <div className="product-list-grid-wrap" style={{ width: '100%', marginTop: '20px' }}>
-        {PriceList.map((Product, k) => (
-          <React.Fragment key={k}>
-            <ProductTile
-              image={Product?.image}
-              name={Product?.name}
-              price={Product?.price}
-              description={Product?.description} 
-            />
-          </React.Fragment>
-        ))}        
-      </div>
+      <PriceList />
     </>
   );
 }
