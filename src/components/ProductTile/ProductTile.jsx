@@ -2,12 +2,12 @@ import React from "react";
 import './styles.css'
 
 const ProductTile = (props) => {
-  const { image, name, price, description } = props;
+  const { src, name, price, description } = props;
   return (
     <div className="card">
         <div className="card-image centerContent">
             <div style={{ width: '200px', height: '250px' }}>
-                <img src={image} alt="" />
+                <img src={src} alt="" />
             </div>
         </div>
         <div className="card-content">

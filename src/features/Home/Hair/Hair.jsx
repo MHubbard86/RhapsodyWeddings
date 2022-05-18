@@ -7,7 +7,7 @@ export default function Hair() {
     <>
       <h3>Hair</h3>
       <div style={{ width: '100%' }}>
-        <PhotoGallery Images={Images} />
+        <PhotoGallery photos={Images} />
       </div>
     </>
   );
