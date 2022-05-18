@@ -20,7 +20,7 @@ export default function Home () {
         <div>
           <h3>Rhapsody Hair and Events</h3>
           <div className="homepage-wording-wrap">
-            Our package includes <strong>10 items for £600</strong> where you can 
+            Our package includes <strong>10 items for £650</strong> where you can 
             hand pick the things you like the most or <strong>simply choose individual items</strong>.<br />
             Essex/Suffolk venues only.<br /><br />
 
@@ -32,9 +32,9 @@ export default function Home () {
           </div>
         </div>
         <div>
-          <div style={{ fontWeight: 'bold', fontSize: '14px'}}>Recommended Supplier at</div>
+          <div style={{ fontWeight: 'bold', fontSize: '14px'}}>Recommended supplier for</div>
           <div>
-            <a href='https://prested.co.uk/suppliers/'>
+            <a href='https://prested.co.uk/suppliers/' target="_blank" rel="noopener noreferrer">
               <img
                 src="../images/prestedhall.png"
                 className="d-inline-block"
@@ -46,7 +46,7 @@ export default function Home () {
           </div>
           <br />
           <div>
-            <div class="blink" style={{ fontWeight: 'bold', fontSize: '14px'}}>
+            <div className="blink" style={{ fontWeight: 'bold', fontSize: '14px'}}>
               Bespoke Handmade Cake Hoops
             </div>
             <Link to="/cakehoops">

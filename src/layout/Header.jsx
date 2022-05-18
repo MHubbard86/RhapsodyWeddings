@@ -35,7 +35,7 @@ export default function Header(props) {
             Reviews
           </Nav.Link>
           <Nav.Link as={Link} to="/photoshoot" eventKey="5">
-            Photoshoots
+          Styled Shoots
           </Nav.Link>
           <Nav.Link as={Link} to="/faq" eventKey="6">
             FAQs
