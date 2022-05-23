@@ -2,11 +2,13 @@ import React from "react";
 import Hair from './Hair/Hair';
 import Decor from './Decor/Decor';
 import { Link } from "react-router-dom";
+import PageHeader from './PageHeader/PageHeader';
 import './styles.css';
 
 export default function Home () {
   return (
     <>
+      <PageHeader /> 
       <div className="homepage-description-wrap">
         <div className='centerContent'>
           <img
@@ -20,15 +22,13 @@ export default function Home () {
         <div>
           <h3>Rhapsody Hair and Events</h3>
           <div className="homepage-wording-wrap">
-            Our package includes <strong>10 items for £650</strong> where you can 
-            hand pick the things you like the most or <strong>simply choose individual items</strong>.<br />
-            Essex/Suffolk venues only.<br /><br />
-
-            Planning your wedding can be so overwhelming and so stressful.<br />
-            Our aim is to take the stress out of the planning and try to make it a fun.<br />
-            So whether you have a specific theme or want bits and pieces.<br /> 
-            I have at least something that will fit your wedding perfectly.<br />
-            Take advantage of my bespoke package.<br />
+            Specialist in Bridal hair, Venue styling and Props hire<br /><br />
+            🌟Modern Bridal hair and Décor hire | Rustic / Boho specialist<br />
+            🌟Essex based<br />
+            🌟Full Bridal Hair Package - <strong>£350</strong> with up to 3 Bridemaids with
+            💖complimentary Mother of the Bride<br />
+            🌟Décor Package - <strong>£650</strong><br />
+            🌟2023/2024 dates available<br />
           </div>
         </div>
         <div>
@@ -46,7 +46,7 @@ export default function Home () {
           </div>
           <br />
           <div>
-            <div className="blink" style={{ fontWeight: 'bold', fontSize: '14px'}}>
+            <div style={{ fontWeight: 'bold', fontSize: '14px'}}>
               Bespoke Handmade Cake Hoops
             </div>
             <Link to="/cakehoops">
@@ -61,9 +61,13 @@ export default function Home () {
           </div>
         </div>
       </div>
-      <div className="homepage-gallery-wrap">
-        <div><Hair /></div>
-        <div><Decor /></div>
+      <div className="homepage-pictures">
+        <div className="homepage-gallery-wrap">
+          <Hair />
+        </div>
+        <div className="homepage-gallery-wrap">
+          <Decor />
+        </div>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 .reviews-wrap {
   display: grid;
   grid-template-columns: 15% 85%;
-  padding: 20px;
+  padding: 10px;
   width: 100%;
 }
 

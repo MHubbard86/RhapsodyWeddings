@@ -40,6 +40,30 @@ const Images = [
     original: directory + "10.jpg",
     thumbnail: directory + "10.jpg",
   },
+  {
+    original: directory + "11.jpg",
+    thumbnail: directory + "11.jpg",
+  }
+  ,
+  {
+    original: directory + "12.jpg",
+    thumbnail: directory + "12.jpg",
+  }
+  ,
+  {
+    original: directory + "13.jpg",
+    thumbnail: directory + "13.jpg",
+  }
+  ,
+  {
+    original: directory + "14.jpg",
+    thumbnail: directory + "14.jpg",
+  }
+  ,
+  {
+    original: directory + "15.jpg",
+    thumbnail: directory + "15.jpg",
+  }
 ];
 
 export default Images;

@@ -1,17 +1,17 @@
-const hairDirectory = '../images/prices/hair/';
+const hairDirectory = '../images/hair/';
 const HairImages = [
   {
-    src: hairDirectory + "1.jpg",
+    src: hairDirectory + "8.jpg",
     width: 2,
     height: 2
   },
   {
-    src: hairDirectory + "2.jpg",
+    src: hairDirectory + "9.jpg",
     width: 2,
     height: 2,
   },
   {
-    src: hairDirectory + "3.jpg",
+    src: hairDirectory + "16.jpg",
     width: 2,
     height: 2
   },

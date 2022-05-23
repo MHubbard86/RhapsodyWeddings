@@ -70,7 +70,7 @@ const ContactUsForm = (props) => {
         placeholder="Enter Phone"
       />
     </Form.Group>
-    <Button variant="success" type="submit">
+    <Button variant="secondary" type="submit">
       Send Message
     </Button>
   </>

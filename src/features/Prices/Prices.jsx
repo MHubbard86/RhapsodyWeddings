@@ -2,6 +2,7 @@ import React from "react";
 import PriceList from './PriceList/PriceList';
 import PhotoGallery from '../../components/PhotoGallery/PhotoGallery';
 import HairImages from './HairImages';
+import { AiOutlineInstagram } from "react-icons/ai";
 import './styles.css';
 
 export default function Prices() {
@@ -32,18 +33,27 @@ export default function Prices() {
       <div className="decor-wrap">
         <div>
           <h3>Décor</h3>
-          <div className='leftContent'><i>Customised to your wedding colours</i></div>
+          <div className='leftContent'>Customised to your wedding colours,
+            for more examples please check us out on Instagram
+            <a 
+              href='https://www.instagram.com/rhapsody_hairand_events/'
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <AiOutlineInstagram style={{ fontSize: '1.5rem', paddingLeft:'3px', color: '#333' }} />
+            </a>
+          </div>
           <div className="pricing-decor-wrap">
             <div>
-              <strong>Full Package - £650</strong><br />
-              <i>Postbox</i><br />
-              <i>Candy cart</i><br />
-              <i>Donut wall</i><br />
-              <i>Ceremony backdrop or flower wall</i><br />
-              <i>Welcome sign or table plan mirrors</i><br />
-              <i>Rose or blossom trees</i><br />
-              <i>Lanterns</i><br />
-              <i>Ladder display</i><br />
+              <h5>Full Package - £650</h5>
+               - Postbox<br />
+               - Candy cart<br />
+               - Donut wall<br />
+               - Ceremony backdrop or flower wall<br />
+               - Welcome sign or table plan mirrors<br />
+               - Rose or blossom trees<br />
+               - Lanterns<br />
+               - Ladder display<br />
             </div>
             <div>
               <u><strong>Individual Prices</strong></u><br />

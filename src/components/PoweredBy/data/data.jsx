@@ -4,8 +4,6 @@ export default {
     label: "Web Developer",
     summary:
       "Senior software engineer with 15 years of professional experience.  Someone who enjoys managing workloads, takes personal responsibility and ownership for delivery, behaviours, and continuous self-improvement.",
-    picture:
-      "/images/profile.jpg",
     email: "mjhubb@homail.co.uk",
     phone: "07716886529",
     profiles: [
@@ -20,12 +18,12 @@ export default {
     {
       name: "Frontend Development",
       skill: [
-        { name: "React", image: "/images/logos/React.png" },
-        { name: "TypeScript", image: "/images/logos/Typescript.png" },
-        { name: "JavaScript", image: "/images/logos/javascript.png" },
-        { name: "HTML", image: "/images/logos/html.png" },
-        { name: "CSS", image: "/images/logos/CSS.png" },
-        { name: "JQuery", image: "/images/logos/jquery.png" },
+        { name: "React" },
+        { name: "TypeScript"},
+        { name: "JavaScript" },
+        { name: "HTML" },
+        { name: "CSS" },
+        { name: "JQuery" },
       ],
     },
     {
