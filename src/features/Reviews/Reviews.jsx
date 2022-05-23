@@ -12,7 +12,7 @@ export default function Reviews() {
         <div style={{ fontWeight: 'bold', fontSize: '18px'}}>
           {name}
         </div>
-        <div style={{ fontStyle: 'Italic', fontSize: '14px'}}>{location}</div>
+        <div style={{ fontStyle: 'Italic', fontSize: '16px'}}>{location}</div>
         {link &&
           <div style={{ fontStyle: 'Italic'}}>
             <a href={link} target="_blank" rel="noopener noreferrer">{link}</a>

@@ -18,6 +18,6 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0px;
     padding: 0;
     font-family: Perpetua;
-    font-size: 14px;
+    font-size: 16px;
     transition: all 0.25s linear;
   }`;

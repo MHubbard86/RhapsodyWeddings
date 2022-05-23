@@ -4,8 +4,8 @@ html {
 }
 
 body {
-  font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
-  font-size: 14px;
+  font-family: Perpetua;
+  font-size: 16px;
   line-height: 1.42857143;
   margin: 0;
 }
@@ -131,7 +131,7 @@ img {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   border-radius: 3px;
   -webkit-user-select: none;
