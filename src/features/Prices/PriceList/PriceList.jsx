@@ -13,6 +13,8 @@ export default function PriceList() {
               name={Product?.name}
               price={Product?.price}
               description={Product?.description} 
+              height={Product?.height} 
+              width={Product?.width} 
             />
           </React.Fragment>
         ))}        

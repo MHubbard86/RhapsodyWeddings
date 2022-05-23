@@ -1,12 +1,26 @@
+const directory = "../images/cakehoops/";
 const Images = [
   {
-    original: "../images/cakehoops/main.jpg",
-    thumbnail: "../images/cakehoops/main.jpg",
+    original: directory + "main.jpg",
+    thumbnail: directory + "main.jpg",
   },
   {
-    original: "../images/cakehoops/1.jpg",
-    thumbnail: "../images/cakehoops/1.jpg",
+    original: directory + "1.jpg",
+    thumbnail: directory + "1.jpg",
   },
+  {
+    original: directory + "2.jpg",
+    thumbnail: directory + "2.jpg",
+  },
+  {
+    original: directory + "3.jpg",
+    thumbnail: directory + "3.jpg",
+  }
+  ,
+  {
+    original: directory + "4.jpg",
+    thumbnail: directory + "4.jpg",
+  }
 ];
 
 export default Images;
