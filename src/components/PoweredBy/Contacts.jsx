@@ -11,10 +11,10 @@ const IconSize = "2em";
 const Icon = ({ url }) => {
   const u = url.toLowerCase();
   if (u.indexOf("github") >= 0) {
-    return <AiOutlineGithub size={IconSize} />;
+    return <AiOutlineGithub size={IconSize} style={{ color: 'rgba(0,0,0,.5)'}} />;
   }
   if (u.indexOf("linkedin") >= 0) {
-    return <AiFillLinkedin size={IconSize} />;
+    return <AiFillLinkedin size={IconSize} style={{ color: 'rgba(0,0,0,.5)'}} />;
   }
   return null;
 };
@@ -25,7 +25,7 @@ export default function Contacts({ resume }) {
       <div style={{ display: 'flex', justifyContent: 'center', flexDirection: 'row' }}>
         <div>          
           <a className="addLink" href={`mailto:${resume.basics.email}`}>
-            <AiOutlineMail size={IconSize} />
+            <AiOutlineMail size={IconSize} style={{ color: 'rgba(0,0,0,.5)'}} />
           </a>
         </div>
         {resume.basics.website && 
@@ -36,7 +36,7 @@ export default function Contacts({ resume }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <AiOutlineLaptop size={IconSize} />
+              <AiOutlineLaptop size={IconSize} style={{ color: 'rgba(0,0,0,.5)'}} />
             </a>
           </div>
         }
@@ -49,7 +49,7 @@ export default function Contacts({ resume }) {
               rel="noopener noreferrer"
               style={{ display: "inline-flex", alignItems: "center" }}
             >
-              <Icon url={p.url} />
+              <Icon url={p.url} style={{ color: 'rgba(0,0,0,.7)'}} />
             </a>
           </div>
         ))}

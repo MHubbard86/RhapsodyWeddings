@@ -2,7 +2,7 @@ import React from "react";
 import PriceList from './PriceList/PriceList';
 import PhotoGallery from '../../components/PhotoGallery/PhotoGallery';
 import HairImages from './HairImages';
-import { AiOutlineInstagram } from "react-icons/ai";
+import InstagramIcon from '../../components/Icons/Instagram';
 import './styles.css';
 
 export default function Prices() {
@@ -35,13 +35,8 @@ export default function Prices() {
           <h3>Décor</h3>
           <div className='leftContent'>Customised to your wedding colours,
             for more examples please check us out on Instagram
-            <a 
-              href='https://www.instagram.com/rhapsody_hairand_events/'
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AiOutlineInstagram style={{ fontSize: '1.5rem', paddingLeft:'3px', color: '#333' }} />
-            </a>
+            &nbsp;
+            <InstagramIcon />
           </div>
           <div className="pricing-decor-wrap">
             <div>
