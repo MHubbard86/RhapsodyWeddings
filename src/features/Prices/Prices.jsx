@@ -1,7 +1,5 @@
 import React from "react";
 import PriceList from './PriceList/PriceList';
-import PhotoGallery from '../../components/PhotoGallery/PhotoGallery';
-import HairImages from './HairImages';
 import InstagramIcon from '../../components/Icons/Instagram';
 import './styles.css';
 
@@ -25,9 +23,6 @@ export default function Prices() {
             Extra Guests - £50 per person<br />
             Use of hair extensions/hair pieces individual wefts - £60
           </div>
-        </div>
-        <div>
-          <PhotoGallery photos={HairImages} />
         </div>
       </div>
       <div className="decor-wrap">
