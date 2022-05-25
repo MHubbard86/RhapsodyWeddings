@@ -2,7 +2,7 @@ import React from "react";
 import './styles.css'
 
 const ProductTile = (props) => {
-  const { src, name, price, description, height = '250px', width = '200px' } = props;
+  const { src, name, price, description, height = 'auto', width = '200px' } = props;
   return (
     <div className="card">
         <div className="card-image centerContent">

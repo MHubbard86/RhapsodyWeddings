@@ -1,4 +1,4 @@
-const FAQ = [
+const Data = [
   {
     question: "How does it work?",
     answer: "Answer...",
@@ -25,4 +25,4 @@ const FAQ = [
   },
 ];
 
-export default FAQ;
+export default Data;
