@@ -18,7 +18,7 @@ export default function Gallery(props) {
         </h3>
         <div className="container-fluid">
           <p className="text-center">
-            For more examples please check out our Instagram page (and don't forget to follow us)
+            For more examples please check out our Instagram page (and do not forget to follow us)
             &nbsp;
             <InstagramIcon />
           </p>

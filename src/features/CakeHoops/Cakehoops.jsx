@@ -1,5 +1,7 @@
 import React from "react";
 import InstagramIcon from '../../components/Icons/Instagram';
+import PhotoAlbum from '../../components/PhotoAlbum/PhotoAlbum';
+import photos from './photos';
 
 export default function Cakehoops() {
   return (
@@ -15,15 +17,10 @@ export default function Cakehoops() {
             <InstagramIcon />
           </p>
           <div className="d-flex flex-wrap justify-content-center">
-            <div className="d-flex flex-column">
-              <img className="img-fluid" src="../images/cakehoops/main.jpg" alt="" />
-              <img className="img-fluid" src="../images/cakehoops/1.jpg" alt="" />
-                <img className="img-fluid" src="../images/cakehoops/2.jpg" alt="" />
-            </div>
-            <div className="d-flex flex-column">
-              <img className="img-fluid" src="../images/cakehoops/3.jpg" alt="" />
-              <img className="img-fluid" src="../images/cakehoops/4.jpg" alt="" />
-            </div>
+            <PhotoAlbum
+              layout="masonry"
+              photos={photos}
+            />
           </div>
         </div>
       </section>
