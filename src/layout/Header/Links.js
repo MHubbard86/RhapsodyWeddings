@@ -9,7 +9,17 @@ const Links = [
   },
   {
     name: "Gallery",
-    link: "/gallery",
+    isMenu: true,
+    menuItems: [
+      {
+        name: "Hair",
+        link: "/gallery#hair",
+      },
+      {
+        name: "Decor",
+        link: "/gallery#decor",
+      }
+    ]
   },
   {
     name: "Reviews",

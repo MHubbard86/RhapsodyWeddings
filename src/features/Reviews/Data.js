@@ -48,6 +48,24 @@ const Data = [
     location: "",
     image: "../images/reviews/5.jpg",
     quote: "Thank you so much for doing all our wedding hair, we are all so pleased.  You're very talented Amy"
+  },
+  {
+    name: "Jasmine McKay",
+    location: "All Manor of Events",
+    image: "../images/reviews/9.jpg",
+    quote: "Amy provided our venue decor for our wedding and did such an amazing job! The attention to detail was incredible and we got so many compliments on our ceremony room and table decorations. Amy invited us for a consultation in her studio where we saw some beautiful decor and she understood what we wanted from the start! Would recommend Amy to everyone who wants a stress free venue dresser with an eye for detail. Thank you so much for making our wedding beautiful! x"
+  },
+  {
+    name: "Kayleigh Brooks-Harper",
+    location: "The Venue at Kersey Mill",
+    image: "../images/reviews/5.jpg",
+    quote: "We would fully recommend Amy for your wedding hair and venue styling needs. Her eye for detail is amazing, stylish and nothing is too much. She is kind, knowledgable and an up and coming expert in the field of weddings. She made our venue look incredible and everything I hoped and dreamt it would look. Her communication is on point, and is very polite and professional." 
+  },
+  {
+    name: "Kayleigh Brooks-Harper",
+    location: "The Venue at Kersey Mill",
+    image: "../images/reviews/5.jpg",
+    quote: "For our hair, she was thorough and quick managing not only my hair, but 6 bridesmaids and my mum with no hassle, drama or complications. She honestly rocked at helping make our wedding perfect and is absolutely a wedding fairy godmother! 🤍"
   }
 ];
 
