@@ -1,7 +1,7 @@
 const breakpoints = [1080, 640, 384, 256, 128, 96, 64, 48];
 
 const path = "../images/photoshoot/";
-const unsplashLink = (id) => `${path}${id}.jpg`;
+const photoLink = (id) => `${path}${id}.jpg`;
 
 const Photos = [
     { id: "1", width: 750, height: 889 },
@@ -23,13 +23,13 @@ const Photos = [
 ];
 
 const PhotoShootPhotos = Photos.map((photo) => ({
-    src: unsplashLink(photo.id, photo.width, photo.height),
+    src: photoLink(photo.id),
     width: photo.width,
     height: photo.height,
     images: breakpoints.map((breakpoint) => {
         const height = Math.round((photo.height / photo.width) * breakpoint);
         return {
-            src: unsplashLink(photo.id, breakpoint, height),
+            src: photoLink(photo.id),
             width: breakpoint,
             height,
         };

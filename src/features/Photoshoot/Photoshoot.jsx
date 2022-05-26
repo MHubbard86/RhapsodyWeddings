@@ -13,13 +13,13 @@ export default function Photoshoot() {
         </h3>
         <div className="container-fluid">     
           <p className="text-center">
-            I love nothing more than to take part in Styled Shoots.  If you're a photographer, venue, make-up artist or other supplier.
-            I'd be more than happy to take part (if available) for hair or décor.<br />
-            Prices to hire is £25 per hour.<br />
-            To check availablility please don't hesitate to get in touch.
-            &nbsp;
-            <InstagramIcon />&nbsp;<EmailIcon />
-          </p>     
+            I love nothing more than to take part in Styled Shoots.  
+            If you are a photographer, venue, make-up artist or other supplier then
+            I would be more than happy to take part (if available) for hair or décor.<br />
+            The price to hire my services is £25 per hour.<br />
+            To check availablility please do not hesitate to get in touch.
+            &nbsp;<InstagramIcon />&nbsp;<EmailIcon />
+          </p>
           <div className="d-flex flex-wrap justify-content-center">
             <PhotoAlbum
               layout="masonry"
