@@ -18,7 +18,7 @@ export default function Prices() {
             Bride - £150<br />
             Bridemaids - £50<br />
             Trail Only - £65<br />
-            Mother of the Bridge or Groom - £45<br />
+            Mother of the Bride or Groom - £45<br />
             Under 10s - £35 each<br />
             Extra Guests - £50 per person<br />
             Use of hair extensions/hair pieces individual wefts - £60

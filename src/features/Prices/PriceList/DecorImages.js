@@ -1,4 +1,4 @@
-const directory = "../images/decor/";
+const directory = "../images/gallery/decor/";
 const DecorImages = [  
   {
     id: "1",
