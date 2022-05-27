@@ -26,3 +26,10 @@
   box-shadow: none;
 }
 
+.dropdown-menu {
+  min-width: 85px;
+}
+
+.dropdown-toggle::after {
+  vertical-align: middle;
+}
