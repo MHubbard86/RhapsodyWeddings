@@ -28,7 +28,7 @@ export default function FAQ() {
                   {FAQ?.question}
                 </h5>
                 <p style={{display:'flex', flexDirection:'row', gap:'10px'}}>
-                  <BsPen />
+                  <BsPen style={{ minWidth: '1rem' }} />
                   {FAQ?.answer}
                 </p>
               </div>

@@ -4,8 +4,8 @@ const Links = [
     link: "/home",
   },
   {
-    name: "Pricing",
-    link: "/prices",
+    name: "Services",
+    link: "/services",
   },
   {
     name: "Gallery",

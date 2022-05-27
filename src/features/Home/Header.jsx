@@ -1,6 +1,5 @@
 import React from 'react';
-import { Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import ContactUs from '../../components/Buttons/ContactUs';
 
 export default function Header() {
   return (
@@ -31,14 +30,7 @@ export default function Header() {
         and will always give my 100% to every couple I work with.  My aim is to gave you 
         the day of your dreams completely stress free.
       </h5>
-      <Nav.Link 
-        as={Link} 
-        to="/email"
-        className='btn btn-outline-light btn-lg m-2' role='button'
-        style={{ border: '1px solid' }}
-      >
-        Contact Us
-      </Nav.Link>
+      <ContactUs isLight={true} />
     </>
   );
 }

@@ -4,7 +4,7 @@ import FAQ from "../features/FAQ/FAQ";
 import Gallery from "../features/Gallery/Gallery";
 import PoweredBy from '../components/PoweredBy/PoweredBy';
 import Photoshoot from "../features/Photoshoot/Photoshoot";
-import Prices from "../features/Prices/Prices";
+import Services from "../features/Services/Services";
 import Cakehoops from "../features/CakeHoops/Cakehoops";
 import * as Route from './RoutesIndex';
 
@@ -28,8 +28,8 @@ const AppRoutes = () => {
       },
       {
         exact: true,
-        component: Prices,
-        path: Route.Prices,
+        component: Services,
+        path: Route.Services,
       },
       {
         exact: true,
