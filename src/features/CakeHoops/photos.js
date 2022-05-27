@@ -4,11 +4,8 @@ const path = "../images/cakehoops/";
 const photoLink = (id) => `${path}${id}.jpg`;
 
 const Photos = [
-    { id: "main", width: 1334, height: 1334 },
     { id: "1", width: 1334, height: 1334 },
-    { id: "2", width: 2048, height: 2048 },
-    { id: "3", width: 1934, height: 2048 },
-    { id: "4", width: 1536, height: 2048 },    
+    { id: "2", width: 1334, height: 1334 }, 
 ];
 
 const PhotoShootPhotos = Photos.map((photo) => ({
