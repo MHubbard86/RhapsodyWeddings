@@ -5,6 +5,7 @@ import { useToasts } from "react-toast-notifications";
 import emailjs from '@emailjs/browser';
 import Confetti from './Confetti';
 import ContactUsForm from './ContactUsForm';
+import PageHeader from '../../components/Headers/Pageheaders';
 
 const ContactUs = () => {
   const [FormSubmitSuccessful, setFormSubmitSuccessful] = useState(false);
@@ -65,14 +66,24 @@ const ContactUs = () => {
   if (loading) return <Spinner />;
 
   return (
-    <Form onSubmit={sendEmail} autoComplete="off" ref={form}>
-      <h1>Enquiry Form</h1>
-      <ContactUsForm
-        FormDetails={FormDetails}
-        setFormDetails={setFormDetails}
-        handleEventChange={handleEventChange}
-      />
-    </Form>
+    <section style={{color: '#000', backgroundColor: '#f3f2f2', paddingTop: '10px'}}>
+      <PageHeader title="Enquiry Form" />
+      <div className="container-fluid">
+        <div className="d-flex flex-wrap justify-content-center">
+        <Form
+          onSubmit={sendEmail}
+          autoComplete="off"
+          ref={form}
+        >
+          <ContactUsForm
+            FormDetails={FormDetails}
+            setFormDetails={setFormDetails}
+            handleEventChange={handleEventChange}
+          />
+        </Form>
+        </div>
+      </div> 
+    </section>
   );
 };
 

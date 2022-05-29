@@ -1,14 +1,13 @@
 import React from "react";
 import Data from './Data';
+import PageHeader from '../../components/Headers/Pageheaders';
 import { ImQuotesLeft } from 'react-icons/im';
 
 export default function Reviews() {
   return (
     <>
-      <section style={{color: '#000', backgroundColor: '#f3f2f2', paddingTop: '10px'}}>
-        <h3 className="text-center mb-4 pb-2 fw-bold" style={{ marginTop: '10px'}}>
-          Reviews
-        </h3>
+      <section style={{ backgroundColor: '#f3f2f2', paddingTop: '10px'}}>
+        <PageHeader title="Reviews" />
         <div className="text-center" style={{display:'flex', flexWrap:'wrap'}}>
           {Data?.map((review, k) => (
             <React.Fragment key={k}>

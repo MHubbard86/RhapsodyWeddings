@@ -3,15 +3,14 @@ import Data from './Data';
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { BsPen } from "react-icons/bs";
 import InstagramIcon from '../../components/Icons/Instagram';
+import PageHeader from '../../components/Headers/Pageheaders';
 import EmailIcon from '../../components/Icons/Email';
 
 export default function FAQ() {
   return (
     <>
-      <section style={{ margin: '10px' }}>
-        <h3 className="text-center mb-4 pb-2 fw-bold" style={{ marginTop: '20px'}}>
-          Frequently Asked Questions (FAQs)
-        </h3>
+      <section style={{ paddingTop: '10px' }}>
+        <PageHeader title="Frequently Asked Questions (FAQs)" />
         <p className="text-center mb-5">
           Find the answers for the most frequently asked questions below, 
           but if your question does not appear please feel free to reach out to me by Email or Instagram

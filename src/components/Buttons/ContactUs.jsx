@@ -9,7 +9,7 @@ const { isLight = false } = props;
     <Nav.Link 
         as={Link} 
         to="/email"
-        className={`btn ${isLight ? 'btn-outline-light' : 'btn-outline'} btn-lg m-2`} role='button'
+        className={`btn ${isLight ? 'btn-outline-light' : 'btn-outline-dark'} btn-lg m-2`} role='button'
         style={{ border: '1px solid' }}
     >
         Contact Us

@@ -1,15 +1,14 @@
 import React from "react";
 import InstagramIcon from '../../components/Icons/Instagram';
 import PhotoAlbum from '../../components/PhotoAlbum/PhotoAlbum';
+import PageHeader from '../../components/Headers/Pageheaders';
 import photos from './photos';
 
 export default function Cakehoops() {
   return (
     <>
-      <section style={{ margin: '10px' }}>
-        <h3 className="text-center mb-4 pb-2 fw-bold" style={{ marginTop: '20px'}}>
-          Cake Hoops
-        </h3>
+      <section style={{ backgroundColor: '#f3f2f2', paddingTop: '10px' }}>
+        <PageHeader title="Cake Hoops" />
         <div className="container-fluid">
           <p className="text-center">
             Our prices start from £65 for our bespoke Cake Hoops made to your individual request

@@ -2,15 +2,14 @@ import React from "react";
 import InstagramIcon from '../../components/Icons/Instagram';
 import EmailIcon from '../../components/Icons/Email';
 import PhotoAlbum from '../../components/PhotoAlbum/PhotoAlbum';
+import PageHeader from '../../components/Headers/Pageheaders';
 import photos from './photos';
 
 export default function Photoshoot() {
   return (
     <>
-      <section style={{ margin: '10px' }}>
-        <h3 className="text-center mb-4 pb-2 fw-bold" style={{ marginTop: '20px'}}>
-          Styled Shoots
-        </h3>
+      <section style={{ backgroundColor: '#f3f2f2', paddingTop: '10px'}}>
+        <PageHeader title="Styled Shoots" />
         <div className="container-fluid">     
           <p className="text-center">
             I love nothing more than to take part in Styled Shoots.  

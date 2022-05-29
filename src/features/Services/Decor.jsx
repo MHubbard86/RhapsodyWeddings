@@ -6,10 +6,10 @@ import './styles.css';
 export default function DecorService() {
   return (
     <>
-      <div className="service-package">
-        <h3>Full Décor Package</h3>
-        <h4>£650</h4>
+      <div className="service-package" style={{ display:'flex', gap:'10px', backgroundColor: '#fff' }}>
         <div>
+          <h3>Full Décor Package</h3>
+          <h4>£650</h4>
           <h6>What's included:</h6>
           <h6 style={{ marginLeft: '20px'}}>Postbox</h6>
           <h6 style={{ marginLeft: '20px'}}>Candy Cart (fully stocked)</h6>
@@ -22,6 +22,15 @@ export default function DecorService() {
           <h6>Customised to your wedding colours</h6>
           <h6>Please enquire here to get started or see more examples within our Gallery:</h6>
             <ContactUs />&nbsp;<GalleryButton />
+        </div>
+        <div>
+          <img
+            src="../images/services/decor.jpg"
+            className="d-inline-block"
+            alt="Rhapsody Wedding Hair and Events "
+            width='auto'
+            height='500px'
+          />
         </div>
       </div>
     </>
