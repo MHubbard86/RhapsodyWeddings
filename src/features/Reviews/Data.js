@@ -58,13 +58,13 @@ const Data = [
   {
     name: "Kayleigh Brooks-Harper",
     location: "The Venue at Kersey Mill",
-    image: "../images/reviews/5.jpg",
+    image: "../images/reviews/10.jpg",
     quote: "We would fully recommend Amy for your wedding hair and venue styling needs. Her eye for detail is amazing, stylish and nothing is too much. She is kind, knowledgable and an up and coming expert in the field of weddings. She made our venue look incredible and everything I hoped and dreamt it would look. Her communication is on point, and is very polite and professional." 
   },
   {
     name: "Kayleigh Brooks-Harper",
     location: "The Venue at Kersey Mill",
-    image: "../images/reviews/5.jpg",
+    image: "../images/reviews/11.jpg",
     quote: "For our hair, she was thorough and quick managing not only my hair, but 6 bridesmaids and my mum with no hassle, drama or complications. She honestly rocked at helping make our wedding perfect and is absolutely a wedding fairy godmother! 🤍"
   }
 ];

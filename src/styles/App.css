@@ -113,6 +113,11 @@ img {
   display: flex;
 }
 
+.rightContent {
+  justify-content: right;
+  display: flex;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #364147;
@@ -158,10 +163,6 @@ p[role="alert"] {
 
 div[role="alert"] {
   color: red;
-}
-
-form > div {
-  margin-bottom: 20px;
 }
 
 .lds-container {

@@ -3,7 +3,7 @@ const Data = [
     question: "What happens at my hair trail?",
     answer: "At hair trail stage, which takes place 2-3 months before your day.  "
     + "This is an opportunity to get to know each other and go through potential hair style options and accessories."
-    + "Each hair appointment normally takes around 2-3 hours.  We will also go through arrivals and timings of the morning and build a schedule",
+    + "Each hair appointment normally takes around 2-3 hours.  We will also go through arrivals and timings of the morning and build a schedule.",
   },
   {
     question: "Can I add Décor later on?",
@@ -24,7 +24,7 @@ const Data = [
   {
     question: "Can I choose which Décor I have?",
     answer: "Yes.  All our décor is individually priced and you can choose exactly what you like.  "
-    + "Our Package can also be altered to your individual requirements",
+    + "Our Package can also be altered to your individual requirements.",
   },
   {
     question: "Can my theme/colours scheme be catered for?",
@@ -55,7 +55,7 @@ const Data = [
   },
   {
     question: "How long in advance can I book?",
-    answer: "My diary is open through 2023 and 2024 "
+    answer: "My diary is open through 2023 and 2024."
   },
   {
     question: "How do payments work?",
