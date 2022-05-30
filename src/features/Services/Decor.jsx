@@ -1,12 +1,11 @@
 import React from "react";
-import ContactUs from '../../components/Buttons/ContactUs';
-import GalleryButton from '../../components/Buttons/Gallery';
+import Button from '../../components/Buttons/Button';
 import './styles.css';
 
 export default function DecorService() {
   return (
     <>
-      <div className="service-package" style={{ display:'flex', gap:'10px', backgroundColor: '#fff' }}>
+      <div className="service-package">
         <div>
           <h3>Full Décor Package</h3>
           <h4>£650</h4>
@@ -20,8 +19,10 @@ export default function DecorService() {
           <h6 style={{ marginLeft: '20px'}}>Lanterns</h6>
           <h6 style={{ marginLeft: '20px'}}>Ladder Display</h6>
           <h6>Customised to your wedding colours</h6>
-          <h6>Please enquire here to get started or see more examples within our Gallery:</h6>
-            <ContactUs />&nbsp;<GalleryButton />
+          <h6>Please enquire here to get started or see more examples within our Gallery</h6>
+          <Button link="/email" text="Enquire Here" />
+          &nbsp;
+          <Button link="/gallery#decor" text="Gallery" />
         </div>
         <div>
           <img

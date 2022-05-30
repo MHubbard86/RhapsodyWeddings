@@ -66,7 +66,7 @@ const ContactUs = () => {
   if (loading) return <Spinner />;
 
   return (
-    <section style={{color: '#000', backgroundColor: '#f3f2f2', paddingTop: '10px'}}>
+    <section style={{color: '#000', backgroundColor: '#f3f2f2' }}>
       <PageHeader title="Enquiry Form" />
       <div className="container-fluid">
         <div className="d-flex flex-wrap justify-content-center">

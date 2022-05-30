@@ -1,5 +1,5 @@
 import React from 'react';
-import ContactUs from '../../components/Buttons/ContactUs';
+import Button from '../../components/Buttons/Button';
 
 export default function Header() {
   return (
@@ -30,7 +30,7 @@ export default function Header() {
         and will always give my 100% to every couple I work with.  My aim is to gave you 
         the day of your dreams completely stress free.
       </h5>
-      <ContactUs isLight={true} />
+      <Button isLight={true} link="/email" text="Enquire Here" />
     </>
   );
 }

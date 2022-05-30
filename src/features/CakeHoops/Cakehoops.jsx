@@ -7,7 +7,7 @@ import photos from './photos';
 export default function Cakehoops() {
   return (
     <>
-      <section style={{ backgroundColor: '#f3f2f2', paddingTop: '10px' }}>
+      <section style={{ backgroundColor: '#f3f2f2' }}>
         <PageHeader title="Cake Hoops" />
         <div className="container-fluid">
           <p className="text-center">
