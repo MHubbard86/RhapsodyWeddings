@@ -1,11 +1,11 @@
 import React from "react";
 import ProductTile from '../../../components/ProductTile/ProductTile';
-import DecorImages from './DecorImages';
+import DecorImages from '../DecorImages';
 
 export default function ServicesList() {
   return (
     <>
-      <div className="product-list-grid-wrap" style={{ width: '100%', marginTop: '20px' }}>
+      <div className="product-list-grid-wrap" style={{ width: '100%', backgroundColor: '#f3f2f2' }} >
         {DecorImages.map((Product, k) => (
           <React.Fragment key={k}>
             <ProductTile

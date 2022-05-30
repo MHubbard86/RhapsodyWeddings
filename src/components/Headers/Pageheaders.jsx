@@ -2,10 +2,10 @@
 import React from "react";
 
 export default function PageHeader(props) {
-const { title, marginTop = '10px' } = props;
+const { title, margin = '10px' } = props;
   return (
-    <h3 className="text-center mb-4 pb-2 fw-bold" style={{ marginTop: marginTop}}>
+    <h2 className="text-center pb-2 fw-bold" style={{ padding: margin}}>
       {title}
-    </h3>
+    </h2>
   )
 }

@@ -6,12 +6,12 @@ import { ImQuotesLeft } from 'react-icons/im';
 export default function Reviews() {
   return (
     <>
-      <section style={{ backgroundColor: '#f3f2f2', paddingTop: '10px'}}>
+      <section style={{ backgroundColor: '#f3f2f2' }}>
         <PageHeader title="Reviews" />
         <div className="text-center" style={{display:'flex', flexWrap:'wrap'}}>
           {Data?.map((review, k) => (
             <React.Fragment key={k}>
-              <div className="col-md-4 mb-4 mb-md-0">
+              <div className="col-md-4 mb-4">
                 <div className="card">
                   <div className="card-body py-4 mt-2">
                     <div className="d-flex justify-content-center mb-4">

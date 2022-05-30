@@ -9,7 +9,7 @@ import EmailIcon from '../../components/Icons/Email';
 export default function FAQ() {
   return (
     <>
-      <section style={{ paddingTop: '10px' }}>
+      <section>
         <PageHeader title="Frequently Asked Questions (FAQs)" />
         <p className="text-center mb-5">
           Find the answers for the most frequently asked questions below, 

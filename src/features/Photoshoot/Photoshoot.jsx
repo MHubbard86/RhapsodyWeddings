@@ -8,7 +8,7 @@ import photos from './photos';
 export default function Photoshoot() {
   return (
     <>
-      <section style={{ backgroundColor: '#f3f2f2', paddingTop: '10px'}}>
+      <section style={{ backgroundColor: '#f3f2f2' }}>
         <PageHeader title="Styled Shoots" />
         <div className="container-fluid">     
           <p className="text-center">
