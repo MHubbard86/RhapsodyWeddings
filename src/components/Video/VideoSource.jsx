@@ -6,8 +6,9 @@ const VideoSource = (props) => {
       height={props.height}
       width={props.width}
       className="video-fluid d-block"
-      autoPlay
-      loop
+      controls={props.controls}
+      autoPlay={props.autoPlay}
+      loop={props.loop}
     >
       <source src={props.src} type="video/mp4" />
     </video>

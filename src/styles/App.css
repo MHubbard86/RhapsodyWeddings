@@ -75,7 +75,12 @@ h1 {
   font-size: 36px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: center;  
+}
+
+h1, h2 {
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
 }
 
 h3 {
