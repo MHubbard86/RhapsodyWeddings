@@ -2,6 +2,15 @@
   max-width: 250px;
 }
 
-img {
-  margin: 6px;
+.video-source {
+  margin: 10px;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .video-source > video {
+    width: 100%;
+  }
 }

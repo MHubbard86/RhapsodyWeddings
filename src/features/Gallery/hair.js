@@ -4,6 +4,13 @@ const path = "../images/gallery/hair/";
 const photoLink = (id) => `${path}${id}.jpg`;
 
 const Photos = [
+    { id: "1_1", width: 2048, height: 2048 },
+    { id: "1_2", width: 1536, height: 2048 },
+    { id: "1_3", width: 750, height: 522 },
+    { id: "1_4", width: 750, height: 557 },
+    { id: "1_5", width: 750, height: 558 },
+    { id: "1_6", width: 2048, height: 1536 },
+    { id: "1_7", width: 1536, height: 2048 },
     { id: "1", width: 552, height: 777 },
     { id: "2", width: 750, height: 901 },
     { id: "3", width: 739, height: 867 },

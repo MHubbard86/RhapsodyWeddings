@@ -18,6 +18,10 @@ const Links = [
       {
         name: "Decor",
         link: "/gallery#decor",
+      },
+      {
+        name: "Reels",
+        link: "/gallery#reels",
       }
     ]
   },

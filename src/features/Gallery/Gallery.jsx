@@ -1,16 +1,17 @@
 import React from "react";
 import InstagramIcon from '../../components/Icons/Instagram';
+import PhotoAlbum from '../../components/PhotoAlbum/PhotoAlbum';
+import VideoSource from '../../components/Video/VideoSource';
+import PageHeader from '../../components/Headers/Pageheaders';
 import hairphotos from './hair';
 import decorphotos from './decor';
-import PhotoAlbum from '../../components/PhotoAlbum/PhotoAlbum';
-import PageHeader from '../../components/Headers/Pageheaders';
+import videos from './videos';
 import './styles.css';
 
 export default function Gallery(props) {
   const galleryType = props.location.hash.replace('#','').toLowerCase();
-  const isHairGallery = galleryType?.includes('hair');
-  const description = isHairGallery ? 'Hair' : 'Décor';
-  const photos = isHairGallery ? hairphotos : decorphotos;
+  const description = (galleryType === 'hair') ? 'Hair' : 
+                      (galleryType === 'decor') ? 'Décor' : 'Reels';
   return (
     <>
       <section style={{ backgroundColor: '#f3f2f2' }}>
@@ -21,12 +22,27 @@ export default function Gallery(props) {
             &nbsp;
             <InstagramIcon />
           </p>
-          <div className="d-flex flex-wrap justify-content-center">
-            <PhotoAlbum
-              layout="masonry"
-              photos={photos}
-            />
-          </div>
+            {((galleryType === 'hair') || (galleryType === 'decor')) &&
+              <div className="d-flex flex-wrap justify-content-center">
+                <PhotoAlbum
+                  layout="masonry"
+                  photos={galleryType === 'hair' ? hairphotos : decorphotos }
+                />
+              </div>
+            }
+            {(galleryType === 'reels') &&
+              <div className="d-flex flex-wrap justify-content-center video-source">
+                {videos.map((video, index) => (
+                  <VideoSource
+                    src={video.src}
+                    autoPlay={false}
+                    loop="loop"
+                    controls="1"
+                    key={index}
+                  />
+                ))}
+              </div>         
+            }
         </div>
       </section>
     </>
