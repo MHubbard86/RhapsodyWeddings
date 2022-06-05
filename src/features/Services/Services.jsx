@@ -4,7 +4,6 @@ import HairService from './Hair/Hair';
 import DecorService from './Decor/Decor';
 import DecorItems from './Decor/DecorItems';
 import Bundles from './Bundles/Bundles';
-import Button from '../../components/Buttons/Button';
 import Enquire from './Buttons/Enquire';
 import Centerpieces from './Decor/Centerpieces';
 import './styles.css';
@@ -16,10 +15,14 @@ export default function Services() {
         <PageHeader title="Services"/>
         <div className="container-fluid">
           <p className="text-center">
-            Description goes here...
-            <Enquire />
-            &nbsp;
-            <Button link="/gallery#hair" text="Gallery" />
+            <h6>
+            Here at Rhapsody we provide your wedding Décor and Hair styling all in one place.<br />
+            With a range of bespoke backdrops, rustic and customised décor to match your theme and colours
+            plus so much more.<br />
+            We specialise in the modern Boho Bride and Bridal hair styling with experience spamming over 
+            20 years.<br />
+            To get started please <Enquire isFilled={true} />
+            </h6>
           </p>
           <div className="service-grid justify-content-center">
             <HairService />
