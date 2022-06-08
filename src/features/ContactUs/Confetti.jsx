@@ -1,15 +1,14 @@
 import React from "react";
 import { useWindowSize } from "react-use";
-import { AiOutlineMail } from "react-icons/ai";
+import PageHeader, { PageParagraph } from '../../components/Headers/Pageheaders';
 import Confetti from "react-confetti";
 
 const ConfettiMessage = () => {
   const { width, height } = useWindowSize();
   return (
     <>
-      <h2>
-        Congratulation on your big day!  Your message <AiOutlineMail /> was sent and we'll be in touch shortly.
-      </h2>
+      <PageHeader title="Congratulation on your big day! "/>
+      <PageParagraph text="Your message was sent and we'll be in touch shortly to discuss more for your big day" />
       <Confetti
         width={width}
         height={height}

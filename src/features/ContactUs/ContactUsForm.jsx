@@ -1,78 +1,81 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
-import DatePicker from "react-datepicker";
+import { ErrorMessage, Field, Form } from "formik";
+import { FormGroup } from "react-bootstrap";
+import DatePickerField from './FieldComponents/DatePicker';
+import Checkbox from './FieldComponents/Checkbox';
 import "react-datepicker/dist/react-datepicker.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/styles.css";
 import excludeDates from './ExcludeDates';
 
 const ContactUsForm = (props) => {
-  const { FormDetails, setFormDetails, handleEventChange } = props;
+  const { errors, touched, formRef } = props;
+  function validateEmail(value) {
+    let error;
+    if (!value) {
+      error = 'Required';
+    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
+      error = 'Invalid email address';
+    }
+    return error;
+  }
   return (
   <>
-    <Form.Group>
-      <Form.Label>Avaliable Dates</Form.Label>
-      <Form.Label className="dateInput">
-        <DatePicker
-          name="Date"
-          dateFormat="MMMM d, yyyy h:mm aa"
-          selected={FormDetails.Date}
-          required
-          showTimeSelect
-          showYearDropdown
-          minDate={new window.Date()}
-          excludeDates={excludeDates}
-          onChange={(Date) => setFormDetails({ ...FormDetails, Date })}
-        />
-      </Form.Label>
-    </Form.Group>
-    <Form.Group>
-      <Form.Label>Wedding Venue</Form.Label>
-      <Form.Control
-        name="Venue"
-        value={FormDetails.Venue || ''}
-        required
-        onChange={handleEventChange}
-        type="input"
-        placeholder="Enter Venue"
-      />
-    </Form.Group>
-    <Form.Group>
-      <Form.Label>Name</Form.Label>
-      <Form.Control
-        name="Name"
-        value={FormDetails.Name || ''}
-        required
-        onChange={handleEventChange}
-        type="input"
-        placeholder="Enter Name"
-      />
-    </Form.Group>
-    <Form.Group>
-      <Form.Label>Email</Form.Label>
-      <Form.Control
-        name="Email"
-        value={FormDetails.Email || ''}
-        required
-        onChange={handleEventChange}
-        type="email"
-        placeholder="Enter Email"
-      />
-    </Form.Group>
-    <Form.Group>
-      <Form.Label>Phone</Form.Label>
-      <Form.Control
-        name="Phone"
-        value={FormDetails.Phone || ''}
-        required
-        type="input"
-        onChange={handleEventChange}
-        placeholder="Enter Phone"
-      />
-    </Form.Group>
-    <Button variant="secondary" type="submit">
-      Send Message
-    </Button>
+    <Form ref={formRef}>
+      <div className="form-group">
+        <FormGroup>
+          <label htmlFor="date">Date</label>
+          <DatePickerField
+            name="date"
+            dateFormat="MMMM d, yyyy"
+            excludeDates={excludeDates} minDate={new window.Date()}
+            className={'form-control' + (errors.date && touched.date ? ' is-invalid' : '')}
+          />
+          <ErrorMessage name="date" component="div" className="invalid-feedback" />
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="time">Ceremony Time</label>
+          <Field name="time" type="text" className={'form-control' + (errors.time && touched.time ? ' is-invalid' : '')} />
+           <ErrorMessage name="time" component="div" className="invalid-feedback" />
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="name">Name</label>
+          <Field name="name" type="text" className={'form-control' + (errors.name && touched.name ? ' is-invalid' : '')} />
+          <ErrorMessage name="name" component="div" className="invalid-feedback" />
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="venue">Venue</label>
+          <Field name="venue" type="text" className={'form-control' + (errors.venue && touched.venue ? ' is-invalid' : '')} />
+          <ErrorMessage name="venue" component="div" className="invalid-feedback" />
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="email">Email</label>
+          <Field name="email" type="text" validate={validateEmail} className={'form-control' + (errors.email && touched.email ? ' is-invalid' : '')} />
+          <ErrorMessage name="email" component="div" className="invalid-feedback" />
+        </FormGroup>
+        <FormGroup>
+          <label htmlFor="phone">Phone</label>
+          <Field name="phone" type="text" className={'form-control' + (errors.phone && touched.phone ? ' is-invalid' : '')} />
+          <ErrorMessage name="phone" component="div" className="invalid-feedback" />
+        </FormGroup>
+        <label htmlFor="packages">Please select an option</label>
+        <div className="form-group form-check">
+          <Checkbox name='packages' value='hair' label='Hair' />
+          <Checkbox name='packages' value='decor' label='Décor' />
+          <Checkbox name='packages' value='cakehoop' label='Cake Hoop' />
+          <Checkbox name='packages' value='styledshoot' label='Styled Shoot' />
+          <ErrorMessage name="packages" component="div" className="invalid-feedback" />
+        </div>
+        <FormGroup>
+          <label htmlFor="phone">Please tell us more to help get started</label>
+          <Field name="details" component="textarea" rows="5" className={'form-control' + (errors.details && touched.details ? ' is-invalid' : '')} />
+          <ErrorMessage name="details" component="div" className="invalid-feedback" />
+        </FormGroup>
+      </div>
+      <div className="form-group">
+        <button type="submit" className="btn btn-primary mr-2">Contact Us</button>
+      </div>
+    </Form>
   </>
   );
 };

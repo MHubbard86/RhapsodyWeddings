@@ -43,7 +43,7 @@ const Data = [
     name: "Emily and Rebecca",
     location: "The Fennes",
     image: "../images/reviews/1.jpg",
-    quote: "Amy was fantastic - from the trail to the day she was professional, friendly and "
+    quote: "Amy was fantastic - from the trial to the day she was professional, friendly and "
     + "happy to work around what we pictured. "
     + "By the time we got to the venue she was already set up and ready to go.  "
     + "She was able to add in the flowers we wanted and they stayed in place the whole day! "
@@ -56,7 +56,7 @@ const Data = [
     + "On the day arrival was prompt and just got on with it (which is just what you want on the morning of your big day). "
     + " In total I had 6 bridesmaids all wanting different looks but still in keeping with the style.  "
     + "As for my hair Amy absolutely smashed it.  She achieved everything wanted (if not more) the whole process from "
-    + "trails to colour was spot on I can not thank you enough"
+    + "trials to colour was spot on I can not thank you enough"
   },
   {
     name: "Jasmine McKay",

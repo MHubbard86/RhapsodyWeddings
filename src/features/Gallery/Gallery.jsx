@@ -2,7 +2,7 @@ import React from "react";
 import InstagramIcon from '../../components/Icons/Instagram';
 import PhotoAlbum from '../../components/PhotoAlbum/PhotoAlbum';
 import VideoSource from '../../components/Video/VideoSource';
-import PageHeader from '../../components/Headers/Pageheaders';
+import PageHeader, { PageParagraph } from '../../components/Headers/Pageheaders';
 import hairphotos from './hair';
 import decorphotos from './decor';
 import videos from './videos';
@@ -10,18 +10,14 @@ import './styles.css';
 
 export default function Gallery(props) {
   const galleryType = props.location.hash.replace('#','').toLowerCase();
-  const description = (galleryType === 'hair') ? 'Hair' : 
-                      (galleryType === 'decor') ? 'Décor' : 'Reels';
+  const description = (galleryType === 'hair') ? 'Hair' : (galleryType === 'decor') ? 'Décor' : 'Reels';
+  const PageDescription = 'For more please check us out on Instagram page (and please follow us)';
   return (
     <>
-      <section style={{ backgroundColor: '#f3f2f2' }}>
+      <section>
         <PageHeader title={`Gallery - ${description}`} />
+        <PageParagraph text={PageDescription} endIcon={<InstagramIcon />} />        
         <div className="container-fluid">
-          <p className="text-center">
-            For more examples please check out our Instagram page (and do not forget to follow us)
-            &nbsp;
-            <InstagramIcon />
-          </p>
             {((galleryType === 'hair') || (galleryType === 'decor')) &&
               <div className="d-flex flex-wrap justify-content-center">
                 <PhotoAlbum

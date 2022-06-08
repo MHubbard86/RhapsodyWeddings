@@ -10,10 +10,10 @@ export default function Header(props) {
     <>
       <Navbar expand="lg" collapseOnSelect>
         <Container>
-          <Navbar.Brand as={Link} to="/home" style={{ fontSize: '20px'}}>Rhapsody</Navbar.Brand> 
+          <Navbar.Brand as={Link} to="/" style={{ fontSize: '1.6rem'}}>Rhapsody</Navbar.Brand> 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
-            <Nav className="container-fluid" activeKey={location?.pathname} style={{ fontSize: '16px'}}>
+            <Nav className="container-fluid" activeKey={location?.pathname} style={{ fontSize: '20px'}}>
               <NavLinks />
             </Nav>
           </Navbar.Collapse>

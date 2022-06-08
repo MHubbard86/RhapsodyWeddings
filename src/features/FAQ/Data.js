@@ -1,7 +1,7 @@
 const Data = [
   {
-    question: "What happens at my hair trail?",
-    answer: "At hair trail stage, which takes place 2-3 months before your day.  "
+    question: "What happens at my hair trial?",
+    answer: "At hair trial stage, which takes place 2-3 months before your day.  "
     + "This is an opportunity to get to know each other and go through potential hair style options and accessories."
     + "Each hair appointment normally takes around 2-3 hours.  We will also go through arrivals and timings of the morning and build a schedule.",
   },
