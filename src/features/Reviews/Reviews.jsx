@@ -2,17 +2,18 @@ import React from "react";
 import Data from './Data';
 import PageHeader from '../../components/Headers/Pageheaders';
 import { ImQuotesLeft } from 'react-icons/im';
+import './styles.css';
 
 export default function Reviews() {
   return (
     <>
-      <section style={{ backgroundColor: '#f3f2f2' }}>
+      <section>
         <PageHeader title="Reviews" />
         <div className="text-center" style={{display:'flex', flexWrap:'wrap'}}>
           {Data?.map((review, k) => (
             <React.Fragment key={k}>
               <div className="col-md-4 mb-4">
-                <div className="card">
+                <div className="card card-layout">
                   <div className="card-body py-4 mt-2">
                     <div className="d-flex justify-content-center mb-4">
                       <img src={review.image} alt=""

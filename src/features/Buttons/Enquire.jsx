@@ -1,5 +1,5 @@
 import React from "react";
-import Button from '../../../components/Buttons/Button';
+import Button from '../../components/Buttons/Button';
 
 export default function Enquire(props) {
   const { isLight = false, isFilled = false } = props;

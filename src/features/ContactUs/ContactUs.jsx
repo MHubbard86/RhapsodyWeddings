@@ -1,86 +1,46 @@
 import React, { useState, useRef } from "react";
-import Spinner from "../../components/Loading/Spinner";
-import { Form } from "react-bootstrap";
-import { useToasts } from "react-toast-notifications";
-import emailjs from '@emailjs/browser';
 import Confetti from './Confetti';
 import ContactUsForm from './ContactUsForm';
 import PageHeader from '../../components/Headers/Pageheaders';
+import { Formik } from 'formik';
+import SendEmail from './SendEmail';
+import Validations from './Validations';
+import * as Yup from 'yup';
+import { useToasts } from "react-toast-notifications";
 
-const ContactUs = () => {
-  const [FormSubmitSuccessful, setFormSubmitSuccessful] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [FormDetails, setFormDetails] = useState('');
-  const { addToast } = useToasts();
-  const isValid = isFormValid();
+const ContactUs = () => {   
+  const [Submitted, setSubmitted] = useState(false);
   const form = useRef();
-
-  function handleEventChange(event) {
-    setFormDetails({ ...FormDetails, [event.target.name]: event.target.value });
-  }
-
-  const sendEmail = (e) => {
-    e.preventDefault();
-    if (isValid) {
-      sendFeedback();
-    } else {
-      addToast("Please add required information", { appearance: "warning", autoDismiss: true });
-    }
-  };
-
-  const sendFeedback = () => {
-    setLoading(true);
-
-    const serviceID = 'default_service';
-    const templateID = 'template_rty98n8';
-
-    emailjs.sendForm(serviceID, templateID, form.current, "user_NTkWkBUvl1LeIrJnVBzV3")
-      .then((res) => {
-        if (res.status === 200) {
-          setFormSubmitSuccessful(true);
-          setLoading(false);
-          addToast("Message sent", { appearance: "info", autoDismiss: true });
-        }
-      })
-      .catch((err) => {
-        console.error("Failed to send email. Error: ", err);
-        setLoading(false);
-        addToast("Something went wrong:" + err, { appearance: "warning", autoDismiss: true });
-      });
-  };
-
-  function isFormValid() {
-    if (
-      !FormDetails.Name ||
-      !FormDetails.Email || 
-      !FormDetails.Phone || 
-      !FormDetails.Date ||
-      !FormDetails.Venue
-    ) {
-      return false;
-    }
-    return true;
-  }
-
-  if (FormSubmitSuccessful) return <Confetti />;
-  if (loading) return <Spinner />;
-
+  const { addToast } = useToasts();
+  if (Submitted) return <Confetti />;  
   return (
-    <section style={{color: '#000', backgroundColor: '#f3f2f2' }}>
-      <PageHeader title="Enquiry Form" />
+    <section>
+      <PageHeader title="Contact Us" />
       <div className="container-fluid">
         <div className="d-flex flex-wrap justify-content-center">
-        <Form
-          onSubmit={sendEmail}
-          autoComplete="off"
-          ref={form}
-        >
-          <ContactUsForm
-            FormDetails={FormDetails}
-            setFormDetails={setFormDetails}
-            handleEventChange={handleEventChange}
-          />
-        </Form>
+        <Formik
+            initialValues={{
+              date: '',
+              time: '',
+              name: '',
+              venue: '',
+              email: '',
+              phone: '',
+              packages: Yup.object({
+                hair: Yup.boolean(),
+                decor: Yup.boolean(),
+                cakehoop: Yup.boolean(),
+                styledshoot: Yup.boolean(),
+              }),
+              details: ''
+            }}
+            validationSchema={Validations}
+            onSubmit={() => { SendEmail(form.current, setSubmitted, addToast) }}
+          >
+            {({ errors, touched}) => (
+              <ContactUsForm errors={errors} touched={touched} formRef={form} />
+            )}
+          </Formik>
         </div>
       </div> 
     </section>

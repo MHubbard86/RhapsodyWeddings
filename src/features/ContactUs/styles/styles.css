@@ -4,9 +4,7 @@
 }
 
 input {
-  width: 100%;
   display: block;
-  width: 100%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -19,6 +17,33 @@ input {
   border-radius: 0.25rem;
 }
 
-input[type="number"] {
+input[type="number"], input[type="text"] {
   width: 100%;
+}
+
+input[type=checkbox], input[type=radio] {
+  width: 25px;
+}
+
+label {
+  margin-bottom: .1rem;
+  white-space: nowrap;
+}
+
+.react-datepicker-wrapper {
+  padding-left: 0px;
+  width: 100%;
+}
+
+.form-check {
+  padding-left: 0rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-checkbox {
+  vertical-align: middle;
+  justify-content: center;
+  display: flex;
 }

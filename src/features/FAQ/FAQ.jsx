@@ -3,21 +3,16 @@ import Data from './Data';
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 import { BsPen } from "react-icons/bs";
 import InstagramIcon from '../../components/Icons/Instagram';
-import PageHeader from '../../components/Headers/Pageheaders';
+import PageHeader, { PageParagraph } from '../../components/Headers/Pageheaders';
 import EmailIcon from '../../components/Icons/Email';
 
 export default function FAQ() {
+  const PageDescription = 'For any additional queries please feel free to reach out to me via email or Instagram'
   return (
     <>
       <section>
         <PageHeader title="Frequently Asked Questions (FAQs)" />
-        <p className="text-center mb-5">
-          Find the answers for the most frequently asked questions below, 
-          but if your question does not appear please feel free to reach out to me by Email or Instagram
-          &nbsp;
-          <EmailIcon />
-          <InstagramIcon />
-        </p>
+        <PageParagraph text={PageDescription} endIcon={<><EmailIcon /><InstagramIcon /></>} />
         <div style={{display:'flex', flexWrap:'wrap'}}>
           {Data?.map((FAQ, k) => (
             <React.Fragment key={k}>
