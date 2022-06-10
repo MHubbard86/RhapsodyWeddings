@@ -4,15 +4,18 @@ import ContactUsForm from './ContactUsForm';
 import PageHeader from '../../components/Headers/Pageheaders';
 import { Formik } from 'formik';
 import SendEmail from './SendEmail';
+import { useToasts } from "react-toast-notifications";
+import Spinner from '../../components/Loading/Spinner';
 import Validations from './Validations';
 import * as Yup from 'yup';
-import { useToasts } from "react-toast-notifications";
 
 const ContactUs = () => {   
   const [Submitted, setSubmitted] = useState(false);
+  const [Loading, setLoading] = useState(false);
   const form = useRef();
   const { addToast } = useToasts();
-  if (Submitted) return <Confetti />;  
+  if (Loading) return <Spinner />;
+  if (Submitted) return <Confetti />;
   return (
     <section>
       <PageHeader title="Contact Us" />
@@ -27,15 +30,15 @@ const ContactUs = () => {
               email: '',
               phone: '',
               packages: Yup.object({
-                hair: Yup.boolean(),
-                decor: Yup.boolean(),
-                cakehoop: Yup.boolean(),
-                styledshoot: Yup.boolean(),
+                hair: false,
+                decor: false,
+                cakehoop: false,
+                styledshoot: false,
               }),
               details: ''
             }}
             validationSchema={Validations}
-            onSubmit={() => { SendEmail(form.current, setSubmitted, addToast) }}
+            onSubmit={() => { SendEmail(form.current, setSubmitted, setLoading, addToast) }}
           >
             {({ errors, touched}) => (
               <ContactUsForm errors={errors} touched={touched} formRef={form} />

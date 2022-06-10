@@ -2,12 +2,12 @@ const Data = [
   {
     question: "What happens at my hair trial?",
     answer: "At hair trial stage, which takes place 2-3 months before your day.  "
-    + "This is an opportunity to get to know each other and go through potential hair style options and accessories."
+    + "This is an opportunity to get to know each other and go through potential hair style options and accessories.  "
     + "Each hair appointment normally takes around 2-3 hours.  We will also go through arrivals and timings of the morning and build a schedule.",
   },
   {
     question: "Can I add Décor later on?",
-    answer: "Yes you can.  If there is a specific item we supply that you particularly want for your day and you've already booked your hair with me, then you are always welcome to add on any Décor (subject to availability).",
+    answer: "Yes you can.  If there is a specific item, we supply that you particularly want for your day and you've already booked your hair with me, then you are always welcome to add on any Décor (subject to availability).",
   },
   {
     question: "How does Hair and Décor work together?",
@@ -23,7 +23,7 @@ const Data = [
   },
   {
     question: "Can I choose which Décor I have?",
-    answer: "Yes.  All our décor is individually priced and you can choose exactly what you like.  "
+    answer: "Yes.  All our décor is individually priced, and you can choose exactly what you like.  "
     + "Our Package can also be altered to your individual requirements.",
   },
   {
@@ -44,7 +44,7 @@ const Data = [
   {
     question: "How do I prep my hair for the day?",
     answer: "I do request that all hair is clean and dry on the morning of the wedding.  "
-    + "The day or evening before is ideal for hair washing, if hair is washed or wet on morning this can effect "
+    + "The day or evening before is ideal for hair washing, if hair is washed or wet on morning this can affect "
     + "the overall look, timings and effect how the styles can be created.",
   },
   {
