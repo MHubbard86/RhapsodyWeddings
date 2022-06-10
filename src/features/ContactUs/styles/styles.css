@@ -27,7 +27,6 @@ input[type=checkbox], input[type=radio] {
 
 label {
   margin-bottom: .1rem;
-  white-space: nowrap;
 }
 
 .react-datepicker-wrapper {
@@ -37,9 +36,16 @@ label {
 
 .form-check {
   padding-left: 0rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-gap: 10px;
+    gap: 10px;
+    width: 100%;
+}
+
+.form-check-label {
+  white-space: nowrap;
 }
 
 .form-checkbox {
