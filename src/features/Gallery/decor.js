@@ -4,6 +4,10 @@ const path = "../images/gallery/decor/";
 const photoLink = (id) => `${path}${id}.jpg`;
 
 const Photos = [
+    { id: "IMG-20220613-WA0000", width: 1440, height: 1800 },
+    { id: "IMG-20220613-WA0001", width: 750, height: 1001 },
+    { id: "IMG-20220613-WA0002", width: 2048, height: 2016 },
+    { id: "IMG-20220613-WA0003", width: 1200, height: 1500 },
     { id: "1", width: 750, height: 477 },
     { id: "2", width: 750, height: 905 },
     { id: "3", width: 750, height: 797 },

@@ -6,6 +6,11 @@ const Data = [
     + "Each hair appointment normally takes around 2-3 hours.  We will also go through arrivals and timings of the morning and build a schedule.",
   },
   {
+    question: "Cancellation Policy",
+    answer: "Once your booking fee has been made this becomes non-refundable.  A booking fee is taking to secure your date so another couple cannot book it and also due to high demand especially summer dates.  "
+    + "Once the full payment has been made this also becomes non-refundable.  In the event I need to cancel your date for unforeseen circumstances a full refund of deposit or full amount will be made.",
+  },
+  {
     question: "Can I add Décor later on?",
     answer: "Yes you can.  If there is a specific item, we supply that you particularly want for your day and you've already booked your hair with me, then you are always welcome to add on any Décor (subject to availability).",
   },

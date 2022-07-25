@@ -8,7 +8,7 @@ export default function Footer() {
     <div className="fixed-bottom">  
     <Navbar variant="dark" bg="dark">
         <Container style={{ justifyContent: 'center' }}>
-          <Navbar.Brand>Welcome to Rhapsody Hair and Events</Navbar.Brand>
+          <Navbar.Brand style={{ marginRight: '1rem' }}>Welcome to Rhapsody Hair and Events</Navbar.Brand>
           <Link to="/poweredby"><ImPower style={{color: '#fff'}} /></Link>
           </Container>
       </Navbar>
