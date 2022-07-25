@@ -86,6 +86,17 @@ const Data = [
     quote: "For our hair, she was thorough and quick managing not only my hair, but 6 "
     + "bridesmaids and my mum with no hassle, drama or complications. She honestly rocked "
     + "at helping make our wedding perfect and is absolutely a wedding fairy godmother! 🤍"
+  },
+  {
+    name: "Victoria Whiting",
+    location: "The Ipswich Hotel",
+    image: "../images/reviews/12.jpg",
+    quote: "Where do I start?!  Amy saved our wedding decor disaster!  We unfortunately through covid got scammed with our first venue dresser and Amy completely saved the situation.  "
+    + "She went above and beyond to make sure we had everything we needed for our special day.  Even while she is preparing for her little bundle of joy to arrive.  "
+    + "She has everything and more you could ever want for your wedding!  She made everything go so smoothly.  We hired our decor from Amy and set up ourselves.  "
+    + "But everything was well packaged and all in an organised manor.  She mad sure we had all the correct colours to match in with our wedding and created a gorgeous welcome sign and added special touches to personalise for us for our big day.  "
+    + "Even our postbox had our names on and the venues address!  Our guests were amazed with mouths wide open at our gorgeous decorations!  I would highly recommend Amy and her decor to everyone!  "
+    + "Thank you so so much we are so grateful!  Mr and Mrs Whiting 🤍"
   }
 ];
 

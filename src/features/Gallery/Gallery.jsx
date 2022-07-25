@@ -11,7 +11,7 @@ import './styles.css';
 export default function Gallery(props) {
   const galleryType = props.location.hash.replace('#','').toLowerCase();
   const description = (galleryType === 'hair') ? 'Hair' : (galleryType === 'decor') ? 'Décor' : 'Reels';
-  const PageDescription = 'For more please check us out on Instagram page (and please follow us)';
+  const PageDescription = 'For more please check us out on Instagram (and please follow us)';
   return (
     <>
       <section>
